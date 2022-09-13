@@ -1,8 +1,9 @@
 // Цветовая палитра блоков
-$palette-white: #ffffff;
-$palette-black: #000000;
+$palette-white: #f3f3f3;
+$palette-black: #1b1b1b;
 
 // Цветовая палитра текста
-$color-text__primary: #000000;
-$color-text__black: #000000;
-$color-text__white: #ffffff;
+$color-text__black: #1b1b1b;
+$color-text__white: #f3f3f3;
+
+$color-text__primary: $color-text__white;
