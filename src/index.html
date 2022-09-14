@@ -85,7 +85,7 @@
 
         <div class="header__callback">
           <a href="" class="callback link">
-            <img src="img/icons/misc/phone.svg" alt="" class="social__icon me-3">
+            <img src="img/icons/misc/phone.svg" alt="" class="callback__icon me-3">
             +7 777 777 77 77
           </a>
         </div>
@@ -98,7 +98,88 @@
 
   <!-- Основной контент -->
   <main>
-    <section>
+    <section id="hero" class="section">
+      <div class="hero">
+        <div class="hero__background">
+          <div class="swiper slider-hero">
+            <div class="container position-relative">
+              <div class="swiper-pagination"></div>
+            </div>
+            <!-- /.container -->
+
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <picture class="hero__picture lazy">
+                  <img class="hero__image image image--cover lazy__item lazy__item--blur" data-src="img/layout/hero/1.png" src="img/layout/hero/thumb/1.png" alt="">
+                </picture>
+              </div>
+              <!-- /.swiper-slide -->
+
+              <div class="swiper-slide">
+                <picture class="hero__picture lazy">
+                  <img class="hero__image image image--cover lazy__item lazy__item--blur" data-src="img/layout/hero/2.png" src="img/layout/hero/thumb/2.png" alt="">
+                </picture>
+              </div>
+              <!-- /.swiper-slide -->
+
+              <div class="swiper-slide">
+                <picture class="hero__picture lazy">
+                  <img class="hero__image image image--cover lazy__item lazy__item--blur" data-src="img/layout/hero/3.png" src="img/layout/hero/thumb/3.png" alt="">
+                </picture>
+              </div>
+              <!-- /.swiper-slide -->
+            </div>
+            <!-- /.swiper-wrapper -->
+          </div>
+          <!-- /.swiper slider-hero -->
+        </div>
+        <!-- /.hero__background -->
+
+        <div class="hero__content">
+          <div class="container position-relative">
+            <h1 class="hero__title">
+              ЗНАХАРЬ
+              <br>
+              <span>за Тридевять земель</span>
+            </h1>
+
+            <p class="hero__desc">
+              Искусство продления здоровья и молодости
+            </p>
+
+            <div class="hero__nav">
+              <nav class="nav nav--hero">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a class="nav__link" href="">О нас</a>
+                  </li>
+
+                  <li class="nav__item">
+                    <a class="nav__link" href="">Травничество</a>
+                  </li>
+
+                  <li class="nav__item">
+                    <a class="nav__link" href="">Статьи</a>
+                  </li>
+
+                  <li class="nav__item">
+                    <a class="nav__link" href="">Галерея</a>
+                  </li>
+
+                  <li class="nav__item">
+                    <a class="nav__link" href="">Услуги</a>
+                  </li>
+                </ul>
+              </nav>
+              <!-- /.nav -->
+            </div>
+            <!-- /.hero__nav -->
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.hero__content -->
+      </div>
+      <!-- /.hero -->
     </section>
   </main>
 
@@ -111,9 +192,11 @@
   <!-- build:js js/script.min.js -->
   <script src="scripts/libraries/lazyload.js"></script>
   <script src="scripts/libraries/forms.js"></script>
+  <script src="scripts/libraries/swiper.min.js"></script>
 
   <script src="scripts/base.js"></script>
   <script src="scripts/init.js"></script>
+  <script src="scripts/slider.js"></script>
   <!-- endbuild -->
 </body>
 

@@ -4,10 +4,17 @@
 
   &__link {
     &:not(:last-child) {
+      @include breakpoint($breakpoint-laptop--large) {
+        margin-right: 25px;
+      }
+
       margin-right: 35px;
     }
   }
 
   &__icon {
+    @include breakpoint($breakpoint-laptop--large) {
+      width: 48px;
+    }
   }
 }

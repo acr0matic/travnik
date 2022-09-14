@@ -1,0 +1,61 @@
+#hero {
+  overflow: hidden;
+}
+
+.hero {
+  height: 100vh;
+
+  &__background {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__content {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 0;
+
+    width: 100%;
+
+    transform: translateY(-50%);
+  }
+
+  &__title {
+    @include breakpoint($breakpoint-laptop--large) {
+      margin-bottom: 35px;
+      font-size: 96px;
+    }
+
+    margin-bottom: 45px;
+
+    font-size: 150px;
+    font-family: ArodoraPro, sans-serif;
+
+    line-height: 0.5;
+
+    text-transform: uppercase;
+
+    span {
+      @include breakpoint($breakpoint-laptop--large) {
+        font-size: 38px;
+      }
+
+      font-size: 58px;
+    }
+  }
+
+  &__desc {
+    @include breakpoint($breakpoint-laptop--large) {
+      font-size: 20px;
+    }
+
+    font-size: 28px;
+  }
+
+  &__nav {
+    position: absolute;
+    top: -25%;
+    right: 10px;
+  }
+}

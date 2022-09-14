@@ -1,2 +1,17 @@
-.slider {
+.swiper {
+  &-pagination {
+    &-bullet {
+      width: 35px;
+      height: 5px;
+
+      margin: 0 8px !important;
+      border-radius: 70px;
+
+      background: rgba(#ffffff, 0.33);
+
+      &-active {
+        background: rgba(#ffffff, 1);
+      }
+    }
+  }
 }

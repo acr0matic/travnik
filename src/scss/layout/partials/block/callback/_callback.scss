@@ -1,3 +1,13 @@
 .callback {
+  @include breakpoint($breakpoint-laptop--large) {
+    font-size: $font-size__text--big;
+  }
+
   font-size: 28px;
+
+  &__icon {
+    @include breakpoint($breakpoint-laptop--large) {
+      width: 20px;
+    }
+  }
 }
