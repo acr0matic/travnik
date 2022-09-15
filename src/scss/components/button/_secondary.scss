@@ -1,0 +1,10 @@
+.button-secondary {
+  border-color: #4d4943;
+  background-color: #4d4943;
+
+  @media (hover: hover) {
+    &:hover {
+      border-color: #f3f3f3;
+    }
+  }
+}

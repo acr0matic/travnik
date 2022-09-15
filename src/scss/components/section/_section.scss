@@ -1,5 +1,9 @@
 .section {
   &:not(:last-child) {
+    @include breakpoint($breakpoint-laptop--large) {
+      margin-bottom: 140px;
+    }
+
     margin-bottom: 200px;
   }
 
