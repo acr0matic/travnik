@@ -1,0 +1,16 @@
+.input {
+  &__field {
+    @include border($palette-white);
+
+    width: 100%;
+    padding: 20px 25px;
+
+    outline: none;
+
+    background-color: transparent;
+    color: #e0e0e0;
+
+    font-weight: $weight-Light;
+    font-size: $font-size__text--regular;
+  }
+}

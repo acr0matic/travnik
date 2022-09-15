@@ -1,2 +1,16 @@
 .form {
+  &__info,
+  &__policy {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  &__info {
+    font-size: $font-size__text--regular;
+  }
+
+  &__policy {
+    margin-top: 30px;
+    font-size: $font-size__text--small;
+  }
 }
