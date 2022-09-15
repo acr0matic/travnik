@@ -1,2 +1,18 @@
 .section {
+  &:not(:last-child) {
+    margin-bottom: 200px;
+  }
+
+  &__header {
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    @include breakpoint($breakpoint-laptop--large) {
+      font-size: 64px;
+    }
+
+    font-size: 96px;
+    line-height: 1.1;
+  }
 }

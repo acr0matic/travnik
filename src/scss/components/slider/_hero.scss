@@ -1,6 +1,10 @@
 .slider-hero {
   .swiper-pagination {
-    top: 130px;
+    @include breakpoint($breakpoint-laptop--large) {
+      top: 40px;
+    }
+
+    top: 60px;
     bottom: initial;
 
     text-align: right;

@@ -1,0 +1,11 @@
+.button-primary {
+  border-color: #f3f3f3;
+  background-color: rgba(#232120, 0.82);
+
+  @media (hover: hover) {
+    &:hover {
+      border-color: transparent;
+      background-color: #4d4943;
+    }
+  }
+}
