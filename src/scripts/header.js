@@ -2,7 +2,7 @@ const header = document.getElementById('header');
 
 if (header) {
   MaxHeight(header);
-  window.addEventListener('resize', () => MaxHeight(items));
+  window.addEventListener('resize', () => MaxHeight(header));
 
   function MaxHeight(target) {
     const height = target.offsetHeight;

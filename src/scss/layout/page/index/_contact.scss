@@ -1,0 +1,42 @@
+#contact {
+  .section__title {
+    font-size: $font-size__title--medium;
+  }
+}
+
+.contact {
+  position: relative;
+  margin-top: 80px;
+
+  .input {
+    width: 400px;
+  }
+
+  &__content {
+    position: absolute;
+    z-index: 2;
+    top: 35%;
+    left: 50%;
+
+    width: 100%;
+
+    transform: translate(-50%, -50%);
+  }
+
+  &__wrapper {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__fill {
+    position: absolute;
+    z-index: 1;
+
+    top: 50%;
+    left: 50%;
+
+    width: 90vw;
+
+    transform: translate(-50%, -50%);
+  }
+}
