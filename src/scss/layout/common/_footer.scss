@@ -3,9 +3,18 @@
 // -----------------------------------------------------------------------------
 
 #footer {
-
+  padding-bottom: 30px;
 }
 
 .footer {
+  display: flex;
+  align-items: center;
 
+  &__copyright {
+    margin-right: 70px;
+  }
+
+  &__social {
+    margin-left: auto;
+  }
 }
