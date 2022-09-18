@@ -6,3 +6,8 @@ const scrollParams = {
   offset: 30,
   header: '#header',
 }
+
+const modalParams = {
+  awaitCloseAnimation: true,
+  disableFocus: true,
+}

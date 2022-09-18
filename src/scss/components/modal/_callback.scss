@@ -1,0 +1,13 @@
+.modal-callback {
+  .modal__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 50px;
+  }
+
+  .modal__form {
+    width: 100%;
+  }
+}

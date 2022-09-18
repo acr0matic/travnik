@@ -3,3 +3,5 @@ const lazyLoadInstance = new LazyLoad({
 });
 
 const scrollController = new SmoothScroll('a[href*="#"]', scrollParams);
+
+MicroModal.init(modalParams);

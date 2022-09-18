@@ -24,7 +24,21 @@ const SLIDER_HERO = new Swiper('.slider-hero', {
 
 const SLIDER_SERVICE = new Swiper('.slider-service', {
   speed: 300,
-  slidesPerView: 'auto',
+  slidesPerView: 1,
+
+  breakpoints: {
+    540: {
+      slidesPerView: 2,
+    },
+
+    991: {
+      slidesPerView: 3,
+    },
+
+    1800: {
+      slidesPerView: 4,
+    },
+  },
 
   pagination: {
     el: '.slider-service .swiper-pagination',
@@ -64,6 +78,20 @@ const SLIDER_SERVICE_CONTENT = new Swiper('.slider-service-content', {
 const SLIDER_BLOG = new Swiper('.slider-blog', {
   speed: 300,
   slidesPerView: 'auto',
+
+  breakpoints: {
+    540: {
+      slidesPerView: 2,
+    },
+
+    991: {
+      slidesPerView: 3,
+    },
+
+    1800: {
+      slidesPerView: 4,
+    },
+  },
 
   pagination: {
     el: '.slider-blog .swiper-pagination',

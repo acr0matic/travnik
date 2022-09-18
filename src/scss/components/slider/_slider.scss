@@ -1,6 +1,10 @@
 .swiper {
   overflow: visible;
 
+  &-wrapper {
+    width: initial;
+  }
+
   &-pagination {
     &--static {
       position: static;

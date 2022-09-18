@@ -18,19 +18,35 @@ $transition-time: 0.2s;
 
   &__container {
     position: relative;
+
+    width: 100%;
+    max-width: 540px;
+
+    border-radius: 10px;
+
+    background-color: $palette-black;
   }
 
   &__header {
   }
 
   &__title {
+    margin-bottom: 12px;
+
+    font-size: $font-size__title--small;
+
+    text-align: center;
+    text-transform: uppercase;
   }
 
   &__close {
     position: absolute;
     z-index: 3;
-    top: 10px;
-    right: 5px;
+    top: 25px;
+    right: 25px;
+
+    width: 24px;
+    height: 24px;
 
     border: none;
     outline: none;
@@ -72,14 +88,6 @@ $transition-time: 0.2s;
   animation: fade-in $transition-time cubic-bezier(0, 0, 0.2, 1);
 }
 
-.micromodal-slide[aria-hidden="false"] .modal__container {
-  animation: slide-in $transition-time cubic-bezier(0, 0, 0.2, 1);
-}
-
 .micromodal-slide[aria-hidden="true"] .modal__overlay {
   animation: fade-out $transition-time cubic-bezier(0, 0, 0.2, 1);
-}
-
-.micromodal-slide[aria-hidden="true"] .modal__container {
-  animation: slide-out $transition-time cubic-bezier(0, 0, 0.2, 1);
 }
