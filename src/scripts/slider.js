@@ -49,6 +49,46 @@ const SLIDER_SERVICE_CONTENT = new Swiper('.slider-service-content', {
   speed: 800,
   slidesPerView: 1,
   simulateTouch: false,
+  autoHeight: true,
+
+  a11y: {
+    enabled: false,
+  },
+
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+});
+
+const SLIDER_BLOG = new Swiper('.slider-blog', {
+  speed: 300,
+  slidesPerView: 'auto',
+
+  pagination: {
+    el: '.slider-blog .swiper-pagination',
+    clickable: true,
+  },
+
+  a11y: {
+    enabled: false,
+  },
+
+  on: {
+    afterInit: (instance) => {
+      const container = instance.el
+      const cards = container.querySelectorAll('.card');
+
+      cards.forEach((card, index) => card.dataset.index = index);
+    }
+  }
+});
+
+const SLIDER_BLOG_CONTENT = new Swiper('.slider-blog-content', {
+  speed: 800,
+  slidesPerView: 1,
+  simulateTouch: false,
+  autoHeight: true,
 
   a11y: {
     enabled: false,

@@ -1,10 +1,43 @@
 .card {
+  position: relative;
+
+  &--clickable {
+    cursor: pointer;
+
+    @media (hover: hover) {
+      &:hover {
+        .image {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+
+  &--active {
+    .card__picture {
+      padding: 3px;
+      box-shadow: 0 0 0 3px #f3f3f3 inset;
+    }
+
+    .image {
+      transform: none !important;
+    }
+  }
+
   &__picture {
+    overflow: hidden;
     margin-bottom: 24px;
+
+    transition: $transition ease;
   }
 
   &__title {
     margin-bottom: 30px;
     text-transform: uppercase;
+  }
+
+  &__description {
+    font-weight: $weight-Light;
+    font-size: $font-size__text--regular;
   }
 }

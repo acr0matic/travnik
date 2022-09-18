@@ -2,6 +2,11 @@
   overflow: visible;
 
   &-pagination {
+    &--static {
+      position: static;
+      margin-top: 50px;
+    }
+
     &-bullet {
       border-radius: 0;
 

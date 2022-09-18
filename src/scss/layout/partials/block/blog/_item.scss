@@ -1,0 +1,26 @@
+.blog-item {
+  .row {
+    &:not(:last-child) {
+      @include breakpoint($breakpoint-laptop--large) {
+        margin-bottom: 70px;
+      }
+
+      margin-bottom: 80px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    font-size: 26px;
+
+    text-transform: uppercase;
+  }
+}
