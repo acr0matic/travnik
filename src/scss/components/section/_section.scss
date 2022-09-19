@@ -8,12 +8,24 @@
   }
 
   &__header {
+    @include breakpoint($breakpoint-tablet) {
+      margin-bottom: 20px;
+    }
+
     margin-bottom: 40px;
   }
 
   &__title {
     @include breakpoint($breakpoint-laptop--large) {
       font-size: 64px;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      font-size: 40px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      font-size: $font-size__text--large;
     }
 
     font-size: 96px;

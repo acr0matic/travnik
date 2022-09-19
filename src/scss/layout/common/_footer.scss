@@ -7,14 +7,32 @@
 }
 
 .footer {
+  @include breakpoint($breakpoint-tablet) {
+    flex-direction: column;
+  }
+
   display: flex;
   align-items: center;
 
+  & > *:not(:last-child) {
+    @include breakpoint($breakpoint-tablet) {
+      margin-bottom: 20px;
+    }
+  }
+
   &__copyright {
+    @include breakpoint($breakpoint-tablet) {
+      margin-right: 0;
+    }
+
     margin-right: 70px;
   }
 
   &__social {
+    @include breakpoint($breakpoint-tablet) {
+      margin-left: 0;
+    }
+
     margin-left: auto;
   }
 }

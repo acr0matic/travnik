@@ -65,7 +65,7 @@
   <header id="header">
     <div class="container">
       <div class="header">
-        <div class="header__social">
+        <div class="header__social d-none d-md-block">
           <div class="social">
             <a href="" class="social__link link">
               <img src="img/icons/social/vk.svg" alt="" class="social__icon">
@@ -83,7 +83,7 @@
         </div>
         <!-- /.header__social -->
 
-        <div class="header__callback">
+        <div class="header__callback d-none d-md-block">
           <a href="" class="callback link">
             <img src="img/icons/misc/phone.svg" alt="" class="callback__icon me-3">
             +7 777 777 77 77
@@ -147,7 +147,12 @@
               Искусство продления здоровья и молодости
             </p>
 
-            <div class="hero__nav">
+            <div class="hero__action d-block d-md-none mt-4">
+              <button class="button button--large button-primary mx-auto">Получить консультацию</button>
+            </div>
+            <!-- /.hero__action -->
+
+            <div class="hero__nav d-none d-md-block">
               <nav class="nav nav--hero">
                 <ul class="nav__list">
                   <li class="nav__item">
@@ -187,14 +192,14 @@
         <div class="about">
           <div class="about__block">
             <div class="row">
-              <div class="col-4 col-xxl-5">
+              <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xxl-5 mb-4 mb-md-0">
                 <picture>
                   <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/about/1.jpg" src="img/layout/about/thumb/1.jpg" alt="">
                 </picture>
               </div>
               <!-- /.col-5 -->
 
-              <div class="col-8 col-xxl-7 ps-5 mt-5">
+              <div class="col-12 col-md-6 col-lg-8 col-xxl-7 ps-lg-5 mt-md-3 mt-lg-5">
                 <div class="section__header">
                   <h2 class="section__title">
                     Здравствуйте!
@@ -202,17 +207,24 @@
                 </div>
                 <!-- /.section__header -->
 
-                <p class="about__text">
-                  Меня зовут Иван Иванов. Я — травник из Москвы.
-                  <br> <br>
-                  Травничеством занимаюсь с начала нулевых, имею большой опыт
-                  <br>
-                  в сфере сбора и изучения трав.
-                  <br> <br>
-                  Травничество невероятно тонкое искусство способное укрепить здоровье человека и продлить его молодость. Именно в травах содержатся самые полезные
-                  <br>
-                  и питательные витамины необходимые человеку.
-                </p>
+                <div class="about__content">
+                  <p>
+                    Меня зовут Иван Иванов. Я — травник из Москвы.
+                  </p>
+
+                  <p>
+                    Травничеством занимаюсь с начала нулевых, имею большой опыт
+                    <br>
+                    в сфере сбора и изучения трав.
+                  </p>
+
+                  <p>
+                    Травничество невероятно тонкое искусство способное укрепить здоровье человека и продлить его молодость. Именно в травах содержатся самые полезные
+                    <br>
+                    и питательные витамины необходимые человеку.
+                  </p>
+                </div>
+                <!-- /.about__content -->
               </div>
               <!-- /.col-7 -->
             </div>
@@ -221,27 +233,37 @@
           <!-- /.about__block -->
 
           <div class="about__block">
-            <div class="row flex-row-reverse align-items-end">
-              <div class="col-5 offset-xxl-1">
+            <div class="row flex-row-reverse align-items-center align-items-lg-end">
+              <div class="col-12 col-md-6 col-lg-5 offset-xxl-1 mb-4 mb-md-0">
                 <picture>
                   <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/about/2.jpg" src="img/layout/about/thumb/2.jpg" alt="">
                 </picture>
               </div>
               <!-- /.col-5 -->
 
-              <div class="col-7 col-xxl-6 pe-5 pe-xxl-0">
-                <p class="about__text">
-                  Травничество - это терапевтическое использование растений
-                  <br>
-                  для укрепления здоровья и профилактики или лечения болезней.
-                  <br> <br>
-                  Медицинские работники, включая хиропрактиков, врачей-натуропатов <br>
-                  и даже практикующих врачей Запада, могут использовать травничество в качестве дополнения к другим, более традиционным методам лечения.
-                  <br> <br>
-                  Как профессиональный травник, специализирующийся на лечении травами, ваши знания и навыки будут ценными и востребованными. Хотите ли вы преподавать, предоставлять консультации по травам или вести свой собственный травяной бизнес, вы можете стать травником.
-                  <br> <br>
-                  Со временем и обучением вы приобретете знания и навыки, необходимые для начала вашей карьеры в области траволечения.
-                </p>
+              <div class="col-12 col-md-6 col-lg-7 col-xxl-6 pe-lg-5 pe-xxl-0">
+                <div class="about__content">
+                  <p>
+                    Травничество - это терапевтическое использование растений
+                    <br>
+                    для укрепления здоровья и профилактики или лечения болезней.
+                  </p>
+
+                  <p>
+                    Медицинские работники, включая хиропрактиков, врачей-натуропатов
+                    <br>
+                    и даже практикующих врачей Запада, могут использовать травничество в качестве дополнения к другим, более традиционным методам лечения.
+                  </p>
+
+                  <p>
+                    Как профессиональный травник, специализирующийся на лечении травами, ваши знания и навыки будут ценными и востребованными. Хотите ли вы преподавать, предоставлять консультации по травам или вести свой собственный травяной бизнес, вы можете стать травником.
+                  </p>
+
+                  <p>
+                    Со временем и обучением вы приобретете знания и навыки, необходимые для начала вашей карьеры в области траволечения.
+                  </p>
+                </div>
+                <!-- /.about__content -->
 
                 <button class="button button--large button-primary mx-auto">Получить консультацию</button>
               </div>
@@ -253,19 +275,19 @@
 
           <div class="about__block">
             <div class="row">
-              <div class="col-5">
+              <div class="col-12 col-md-5 mb-4 mb-md-0">
                 <picture>
                   <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/about/3.jpg" src="img/layout/about/thumb/3.jpg" alt="">
                 </picture>
               </div>
               <!-- /.col-5 -->
 
-              <div class="col-7 d-flex flex-column">
-                <p class="my-auto">
-                  Медицинские работники, включая хиропрактиков, врачей-натуропатов и даже практикующих врачей Запада, могут использовать травничество в качестве дополнения к другим, более традиционным методам лечения.
-                  <br> <br>
-                  Со временем и обучением вы приобретете знания и навыки, необходимые для начала вашей карьеры в области траволечения.
-                </p>
+              <div class="col-12 col-md-7 d-flex flex-column">
+                <div class="about__content my-auto mb-4 mb-md-0">
+                  <p>Медицинские работники, включая хиропрактиков, врачей-натуропатов и даже практикующих врачей Запада, могут использовать травничество в качестве дополнения к другим, более традиционным методам лечения.</p>
+                  <p>Со временем и обучением вы приобретете знания и навыки, необходимые для начала вашей карьеры в области траволечения.</p>
+                </div>
+                <!-- /.about__content -->
 
                 <div class="row">
                   <div class="col-7">
@@ -292,28 +314,33 @@
 
           <div class="about__block">
             <div class="row">
-              <div class="col-7">
-                <p>
-                  Травничество - это терапевтическое использование растений
-                  для укрепления здоровья и профилактики или лечения болезней.
-                  <br> <br>
-                  Медицинские работники, включая хиропрактиков, врачей-натуропатов
-                  и даже практикующих врачей Запада, могут использовать травничество в качестве дополнения к другим, более традиционным методам лечения.
-                </p>
+              <div class="col-12 col-md-7">
+                <div class="about__content">
+                  <p>
+                    Травничество - это терапевтическое использование растений
+                    для укрепления здоровья и профилактики или лечения болезней.
+                  </p>
+
+                  <p>
+                    Медицинские работники, включая хиропрактиков, врачей-натуропатов
+                    и даже практикующих врачей Запада, могут использовать травничество в качестве дополнения к другим, более традиционным методам лечения.
+                  </p>
+                </div>
+                <!-- /.about__content -->
               </div>
               <!-- /.col-7 -->
             </div>
             <!-- /.row -->
 
             <div class="row">
-              <div class="col-8">
+              <div class="col-12 col-md-8 mb-4 mb-md-0">
                 <picture>
                   <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/about/7.jpg" src="img/layout/about/thumb/7.jpg" alt="">
                 </picture>
               </div>
               <!-- /.col-8 -->
 
-              <div class="col-4">
+              <div class="col-12 col-md-4">
                 <picture>
                   <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/about/6.jpg" src="img/layout/about/thumb/6.jpg" alt="">
                 </picture>
@@ -325,28 +352,38 @@
           <!-- /.about__block -->
 
           <div class="about__block">
-            <div class="row align-items-center">
-              <div class="col-4">
+            <div class="row align-items-center flex-column-reverse flex-md-row">
+              <div class="col-12 col-md-4 mt-4 mt-md-0">
                 <picture>
                   <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/about/8.jpg" src="img/layout/about/thumb/8.jpg" alt="">
                 </picture>
               </div>
               <!-- /.col-5 -->
 
-              <div class="col-8 ps-5">
-                <p>
-                  Травничество - это терапевтическое использование растений для укрепления здоровья и профилактики или лечения болезней.
-                  <br> <br>
-                  Медицинские работники, включая хиропрактиков, врачей-натуропатов и даже практикующих врачей Запада, могут использовать травничество в качестве дополнения к другим, более традиционным методам лечения.
-                </p>
+              <div class="col-12 col-md-8 ps-md-5">
+                <div class="about__content">
+                  <p>
+                    Травничество - это терапевтическое использование растений для укрепления здоровья и профилактики или лечения болезней.
+                  </p>
 
-                <button class="button button--large button-primary mx-auto">Получить консультацию</button>
+                  <p>
+                    Медицинские работники, включая хиропрактиков, врачей-натуропатов и даже практикующих врачей Запада, могут использовать травничество в качестве дополнения к другим, более традиционным методам лечения.
+                  </p>
+                </div>
+                <!-- /.about__content -->
 
-                <p>
-                  Как профессиональный травник, специализирующийся на лечении травами, ваши знания и навыки будут ценными и востребованными. Хотите ли вы преподавать, предоставлять консультации по травам или вести свой собственный травяной бизнес, вы можете стать травником.
-                  <br> <br>
-                  Со временем и обучением вы приобретете знания и навыки, необходимые для начала вашей карьеры в области траволечения.
-                </p>
+                <button class="button button--large button-primary mx-auto d-none d-md-block">Получить консультацию</button>
+
+                <div class="about__content">
+                  <p>
+                    Как профессиональный травник, специализирующийся на лечении травами, ваши знания и навыки будут ценными и востребованными. Хотите ли вы преподавать, предоставлять консультации по травам или вести свой собственный травяной бизнес, вы можете стать травником.
+                  </p>
+
+                  <p>
+                    Со временем и обучением вы приобретете знания и навыки, необходимые для начала вашей карьеры в области траволечения.
+                  </p>
+                </div>
+                <!-- /.about__content -->
               </div>
               <!-- /.col-7 -->
             </div>
@@ -1161,14 +1198,14 @@
               </div>
               <!-- /.section__header -->
 
-              <form action="" class="form d-flex justify-content-center">
-                <div class="input me-4">
+              <form action="" class="form d-flex flex-column flex-md-row justify-content-center px-3">
+                <div class="input mb-3 mb-md-0 me-md-4">
                   <input placeholder="Номер телефона" autocomplete="off" type="tel" name="user_name" class="input__field">
                   <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
                 </div>
                 <!-- /.input -->
 
-                <button data-sending="Отправка..." type="submit" class="button button-primary" data-index="2">Получить консультацию</button>
+                <button data-sending="Отправка..." type="submit" class="button button-secondary" data-index="2">Получить консультацию</button>
               </form>
             </div>
             <!-- /.contact__wrapper -->
@@ -1184,7 +1221,7 @@
           <source media="(min-width: 991px)" data-srcset="img/layout/callback/background-1200_x_1628.png" />
           <source media="(min-width: 768px)" data-srcset="img/layout/callback/background-991_x_1345.png" />
           <source media="(min-width: 540px)" data-srcset="img/layout/callback/background-768_x_1042.png" />
-          <img class="image lazy__item lazy__item--blur" data-src="img/layout/callback/background-540_x_732.png" src="img/layout/callback/thumb.png" alt="">
+          <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/callback/background-540_x_732.png" src="img/layout/callback/thumb.png" alt="">
         </picture>
       </div>
       <!-- /.contact -->
@@ -1197,7 +1234,7 @@
       <div class="footer">
         <div class="footer__copyright">Травник Иван Иванов</div>
 
-        <div class="header__callback">
+        <div class="footer__callback">
           <a href="" class="callback link">
             <img src="img/icons/misc/phone.svg" alt="" class="callback__icon me-3">
             +7 777 777 77 77

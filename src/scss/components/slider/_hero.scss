@@ -4,6 +4,11 @@
       top: 40px;
     }
 
+    @include breakpoint($breakpoint-tablet) {
+      top: 10px;
+      text-align: center;
+    }
+
     top: 60px;
     bottom: initial;
 

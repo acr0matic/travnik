@@ -1,5 +1,9 @@
 #contact {
   .section__title {
+    @include breakpoint($breakpoint-tablet) {
+      font-size: $font-size__text--large + 6px;
+    }
+
     font-size: $font-size__title--medium;
   }
 }
@@ -9,10 +13,18 @@
   margin-top: 80px;
 
   .input {
+    @include breakpoint($breakpoint-tablet) {
+      width: 100%;
+    }
+
     width: 400px;
   }
 
   &__content {
+    @include breakpoint($breakpoint-tablet) {
+      top: 25%;
+    }
+
     position: absolute;
     z-index: 2;
     top: 35%;
@@ -24,11 +36,23 @@
   }
 
   &__wrapper {
+    @include breakpoint($breakpoint-tablet) {
+      max-width: 450px;
+      margin: 0 auto;
+    }
+
     position: relative;
     z-index: 2;
   }
 
   &__fill {
+    @include breakpoint($breakpoint-tablet) {
+      width: 150vw;
+
+      min-width: 500px;
+      max-width: 800px;
+    }
+
     position: absolute;
     z-index: 1;
 
@@ -38,5 +62,11 @@
     width: 90vw;
 
     transform: translate(-50%, -50%);
+  }
+
+  &__background {
+    .image {
+      min-height: 700px;
+    }
   }
 }

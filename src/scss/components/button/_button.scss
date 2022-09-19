@@ -3,6 +3,10 @@
     padding: 18px 30px;
   }
 
+  @include breakpoint($breakpoint-tablet) {
+    font-size: $font-size__text--small;
+  }
+
   @include border(transparent);
 
   display: block;
@@ -32,6 +36,10 @@
   &--large {
     @include breakpoint($breakpoint-laptop--large) {
       padding: 20px 40px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      padding: 12px 20px;
     }
 
     padding: 25px 90px;

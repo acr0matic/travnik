@@ -77,7 +77,7 @@ const SLIDER_SERVICE_CONTENT = new Swiper('.slider-service-content', {
 
 const SLIDER_BLOG = new Swiper('.slider-blog', {
   speed: 300,
-  slidesPerView: 'auto',
+  slidesPerView: 1,
 
   breakpoints: {
     540: {
