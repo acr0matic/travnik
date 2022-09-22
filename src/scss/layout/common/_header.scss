@@ -15,6 +15,7 @@
   width: 100%;
 
   background-color: $palette-black;
+  transition: 0.3s ease;
 }
 
 .header {
@@ -23,4 +24,15 @@
   justify-content: space-between;
 
   padding: 20px 0;
+
+  &-background {
+    background-color: $palette-black !important;
+    box-shadow:
+      0 3px 1px rgba(#000000, 0.028),
+      0 1px 4px rgba(#000000, 0.042),
+  }
+
+  &__action {
+    margin-left: auto;
+  }
 }

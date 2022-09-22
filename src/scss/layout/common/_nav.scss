@@ -35,4 +35,16 @@
       font-size: 20px;
     }
   }
+
+  &--mobile {
+    .nav__item {
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+    }
+
+    .nav__link {
+      font-size: $font-size__text--big;
+    }
+  }
 }
