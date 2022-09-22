@@ -3,6 +3,10 @@
     padding: 18px 30px;
   }
 
+  @include breakpoint($breakpoint-tablet--large) {
+    padding: 14px 30px;
+  }
+
   @include breakpoint($breakpoint-tablet) {
     font-size: $font-size__text--small;
   }
@@ -54,5 +58,6 @@
   &--download {
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 }

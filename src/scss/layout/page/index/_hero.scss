@@ -1,6 +1,9 @@
 #hero {
+  @include breakpoint($breakpoint-tablet--large) {
+    margin-bottom: 80px;
+  }
+
   @include breakpoint($breakpoint-tablet) {
-    overflow: visible;
     margin-bottom: 250px;
   }
 

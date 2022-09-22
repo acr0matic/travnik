@@ -192,7 +192,7 @@
         <div class="about">
           <div class="about__block">
             <div class="row">
-              <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xxl-5 mb-4 mb-md-0">
+              <div class="col-12 col-md-6 col-lg-4 col-xxl-5 mb-4 mb-md-0">
                 <picture>
                   <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/about/1.jpg" src="img/layout/about/thumb/1.jpg" alt="">
                 </picture>
@@ -233,9 +233,9 @@
           <!-- /.about__block -->
 
           <div class="about__block">
-            <div class="row flex-row-reverse align-items-center align-items-lg-end">
+            <div class="row flex-row-reverse align-items-lg-center align-items-lg-end">
               <div class="col-12 col-md-6 col-lg-5 offset-xxl-1 mb-4 mb-md-0">
-                <picture>
+                <picture class="position-sticky">
                   <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/about/2.jpg" src="img/layout/about/thumb/2.jpg" alt="">
                 </picture>
               </div>
@@ -276,14 +276,14 @@
           <div class="about__block">
             <div class="row">
               <div class="col-12 col-md-5 mb-4 mb-md-0">
-                <picture>
+                <picture class="h-100">
                   <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/about/3.jpg" src="img/layout/about/thumb/3.jpg" alt="">
                 </picture>
               </div>
               <!-- /.col-5 -->
 
               <div class="col-12 col-md-7 d-flex flex-column">
-                <div class="about__content my-auto mb-4 mb-md-0">
+                <div class="about__content my-auto mb-4">
                   <p>Медицинские работники, включая хиропрактиков, врачей-натуропатов и даже практикующих врачей Запада, могут использовать травничество в качестве дополнения к другим, более традиционным методам лечения.</p>
                   <p>Со временем и обучением вы приобретете знания и навыки, необходимые для начала вашей карьеры в области траволечения.</p>
                 </div>
@@ -314,7 +314,7 @@
 
           <div class="about__block">
             <div class="row">
-              <div class="col-12 col-md-7">
+              <div class="col-12 col-lg-7">
                 <div class="about__content">
                   <p>
                     Травничество - это терапевтическое использование растений
@@ -397,10 +397,10 @@
     </section>
 
     <section id="blog" class="section">
-      <div class="container">
-        <div class="section__header">
-          <div class="blog">
-            <div class="blog__list swiper swiper--grid slider-blog">
+      <div class="blog">
+        <div class="blog__list">
+          <div class="container">
+            <div class="swiper swiper--grid slider-blog">
               <div class="swiper-wrapper row">
                 <div class="swiper-slide col-4 col-xxl-3">
                   <div class="card card--clickable blog">
@@ -475,21 +475,27 @@
 
               <div class="swiper-pagination swiper-pagination--static swiper-pagination--square"></div>
             </div>
-            <!-- /.swiper slider-blog -->
+            <!-- /.swiper swiper--grid slider-blog -->
+          </div>
+          <!-- /.swiper slider-blog -->
+        </div>
+        <!-- /.container -->
 
-            <div class="blog__content swiper slider-blog-content">
+        <div class="blog__content">
+          <div class="container">
+            <div class="swiper slider-blog-content">
               <div class="swiper-wrapper" id="blog-content">
                 <div class="swiper-slide">
                   <div class="blog-item">
                     <div class="row">
-                      <div class="col-5 col-xxl-4 pe-5">
-                        <picture class="blog-item__picture">
+                      <div class="col-12 col-md-5 col-xxl-4 pe-lg-5">
+                        <picture class="blog-item__picture position-sticky">
                           <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/blog/1.jpg" src="img/layout/blog/thumb/1.jpg" alt="">
                         </picture>
                       </div>
                       <!-- /.col-3 -->
 
-                      <div class="col-7 col-xxl-8 pe-5 d-flex flex-column">
+                      <div class="col-12 col-md-7 col-xxl-8 pe-lg-5 d-flex flex-column">
                         <div class="blog-item__content">
                           <h3 class="blog-item__title">Экспресс консультация</h3>
                           <p class="blog-item__text">
@@ -509,14 +515,14 @@
                     <!-- /.row -->
 
                     <div class="row flex-row-reverse">
-                      <div class="col-5 col-xxl-4 ps-5">
-                        <picture class="blog-item__picture">
+                      <div class="col-12 col-md-5 col-xxl-4 ps-lg-5">
+                        <picture class="blog-item__picture position-sticky">
                           <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/blog/5.jpg" src="img/layout/blog/thumb/5.jpg" alt="">
                         </picture>
                       </div>
                       <!-- /.col-3 -->
 
-                      <div class="col-7 col-xxl-8 pe-5 d-flex flex-column">
+                      <div class="col-12 col-md-7 col-xxl-8 pe-lg-5 d-flex flex-column">
                         <div class="blog-item__content">
                           <p class="blog-item__text">
                             Как профессиональный травник, специализирующийся на лечении травами, ваши знания и навыки будут ценными и востребованными. Хотите ли вы преподавать, предоставлять консультации по травам или вести свой собственный травяной бизнес, вы можете стать травником.
@@ -719,11 +725,11 @@
             </div>
             <!-- /.swiper slider-blog-content -->
           </div>
-          <!-- /.blog -->
+          <!-- /.container -->
         </div>
-        <!-- /.section__header -->
+        <!-- /.swiper slider-blog-content -->
       </div>
-      <!-- /.container -->
+      <!-- /.blog -->
     </section>
 
     <section id="gallery" class="section">
@@ -782,406 +788,416 @@
       <!-- /.container -->
     </section>
 
-    <section id="service" class="section overflow-hidden">
-      <div class="container">
-        <div class="service">
-          <div class="service__list swiper swiper--grid slider-service">
-            <div class="swiper-wrapper row">
-              <div class="swiper-slide col-4 col-xxl-3">
-                <div class="card service-card">
-                  <picture class="card__picture">
-                    <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/service/1.jpg" src="img/layout/service/thumb/1.jpg" alt="">
-                  </picture>
+    <section id="service" class="section">
+      <div class="service">
+        <div class="service__list">
+          <div class="container">
+            <div class="swiper swiper--grid slider-service">
+              <div class="swiper-wrapper row">
+                <div class="swiper-slide col-4 col-xxl-3">
+                  <div class="card service-card">
+                    <picture class="card__picture">
+                      <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/service/1.jpg" src="img/layout/service/thumb/1.jpg" alt="">
+                    </picture>
 
-                  <h3 class="card__title">Экспресс консультация</h3>
+                    <h3 class="card__title">Экспресс консультация</h3>
 
-                  <div class="card__action">
-                    <a href="#service-content" class="button button--block button-primary">ЗАКАЗАТЬ УСЛУГУ</a>
+                    <div class="card__action">
+                      <a href="#service-content" class="button button--block button-primary">ЗАКАЗАТЬ УСЛУГУ</a>
+                    </div>
+                    <!-- /.card__action -->
                   </div>
-                  <!-- /.card__action -->
+                  <!-- /.card service-card -->
                 </div>
-                <!-- /.card service-card -->
-              </div>
-              <!-- /.swiper-slide col-3 -->
+                <!-- /.swiper-slide col-3 -->
 
-              <div class="swiper-slide col-4 col-xxl-3">
-                <div class="card service-card">
-                  <picture class="card__picture">
-                    <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/service/2.jpg" src="img/layout/service/thumb/2.jpg" alt="">
-                  </picture>
+                <div class="swiper-slide col-4 col-xxl-3">
+                  <div class="card service-card">
+                    <picture class="card__picture">
+                      <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/service/2.jpg" src="img/layout/service/thumb/2.jpg" alt="">
+                    </picture>
 
-                  <h3 class="card__title">Экспресс консультация</h3>
+                    <h3 class="card__title">Экспресс консультация</h3>
 
-                  <div class="card__action">
-                    <a href="#service-content" class="button button--block button-primary">ЗАКАЗАТЬ УСЛУГУ</a>
+                    <div class="card__action">
+                      <a href="#service-content" class="button button--block button-primary">ЗАКАЗАТЬ УСЛУГУ</a>
+                    </div>
+                    <!-- /.card__action -->
                   </div>
-                  <!-- /.card__action -->
+                  <!-- /.card service-card -->
                 </div>
-                <!-- /.card service-card -->
-              </div>
-              <!-- /.swiper-slide col-3 -->
+                <!-- /.swiper-slide col-3 -->
 
-              <div class="swiper-slide col-4 col-xxl-3">
-                <div class="card service-card">
-                  <picture class="card__picture">
-                    <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/service/3.jpg" src="img/layout/service/thumb/3.jpg" alt="">
-                  </picture>
+                <div class="swiper-slide col-4 col-xxl-3">
+                  <div class="card service-card">
+                    <picture class="card__picture">
+                      <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/service/3.jpg" src="img/layout/service/thumb/3.jpg" alt="">
+                    </picture>
 
-                  <h3 class="card__title">Экспресс консультация</h3>
+                    <h3 class="card__title">Экспресс консультация</h3>
 
-                  <div class="card__action">
-                    <a href="#service-content" class="button button--block button-primary">ЗАКАЗАТЬ УСЛУГУ</a>
+                    <div class="card__action">
+                      <a href="#service-content" class="button button--block button-primary">ЗАКАЗАТЬ УСЛУГУ</a>
+                    </div>
+                    <!-- /.card__action -->
                   </div>
-                  <!-- /.card__action -->
+                  <!-- /.card service-card -->
                 </div>
-                <!-- /.card service-card -->
-              </div>
-              <!-- /.swiper-slide col-3 -->
+                <!-- /.swiper-slide col-3 -->
 
-              <div class="swiper-slide col-4 col-xxl-3">
-                <div class="card service-card">
-                  <picture class="card__picture">
-                    <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/service/4.jpg" src="img/layout/service/thumb/4.jpg" alt="">
-                  </picture>
+                <div class="swiper-slide col-4 col-xxl-3">
+                  <div class="card service-card">
+                    <picture class="card__picture">
+                      <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/service/4.jpg" src="img/layout/service/thumb/4.jpg" alt="">
+                    </picture>
 
-                  <h3 class="card__title">Экспресс консультация</h3>
+                    <h3 class="card__title">Экспресс консультация</h3>
 
-                  <div class="card__action">
-                    <a href="#service-content" class="button button--block button-primary">ЗАКАЗАТЬ УСЛУГУ</a>
+                    <div class="card__action">
+                      <a href="#service-content" class="button button--block button-primary">ЗАКАЗАТЬ УСЛУГУ</a>
+                    </div>
+                    <!-- /.card__action -->
                   </div>
-                  <!-- /.card__action -->
+                  <!-- /.card service-card -->
                 </div>
-                <!-- /.card service-card -->
+                <!-- /.swiper-slide col-3 -->
               </div>
-              <!-- /.swiper-slide col-3 -->
+              <!-- /.swiper-wrapper row -->
+
+              <div class="swiper-pagination swiper-pagination--static swiper-pagination--square"></div>
             </div>
-            <!-- /.swiper-wrapper row -->
-
-            <div class="swiper-pagination swiper-pagination--static swiper-pagination--square"></div>
+            <!-- /.swiper swiper--grid slider-service -->
           </div>
-          <!-- /.swiper slider-service -->
-
-          <div class="service__content swiper slider-service-content">
-            <div class="swiper-wrapper" id="service-content">
-              <div class="swiper-slide">
-                <div class="service-item">
-                  <div class="row">
-                    <div class="col-5 col-xxl-4 pe-5">
-                      <picture class="service-item__picture">
-                        <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/service/1.jpg" src="img/layout/service/thumb/1.jpg" alt="">
-                      </picture>
-                    </div>
-                    <!-- /.col-3 -->
-
-                    <div class="col-7 col-xxl-5 pe-5 d-flex flex-column">
-                      <div class="service-item__content">
-                        <h3 class="service-item__title">Экспресс консультация</h3>
-                        <p class="service-item__text">
-                          Как профессиональный травник, специализирующийся на лечении травами, ваши знания и навыки будут ценными и востребованными. Хотите ли вы преподавать, предоставлять консультации по травам или вести свой собственный травяной бизнес, вы можете стать травником.
-                          <br> <br>
-                          Со временем и обучением вы приобретете знания и навыки, необходимые для начала вашей карьеры в области траволечения.
-                        </p>
-                      </div>
-                      <!-- /.service-item__content -->
-
-                      <div class="service-item__action d-flex">
-                        <button class="button button--download button-primary">
-                          Скачать анкету
-                          <img class="ms-3" src="img/icons/misc/download.svg" alt="">
-                        </button>
-
-                        <button data-micromodal-trigger="modal-callback" class="button button-secondary ms-4 d-block d-xxl-none">
-                          Отправить заявку
-                        </button>
-                      </div>
-                      <!-- /.service-item__action -->
-                    </div>
-                    <!-- /.col-5 -->
-
-                    <div class="col-xxl-3 my-auto d-none d-xxl-block">
-                      <form action="" class="form">
-                        <div class="form__info">
-                          Заполните информацию и я Вам перезвоню
-                        </div>
-                        <!-- /.form__info -->
-
-                        <div class="input mb-3">
-                          <input placeholder="Ваше имя" autocomplete="off" type="text" name="user_name" class="input__field">
-                          <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
-                        </div>
-                        <!-- /.input -->
-
-                        <div class="input mb-3">
-                          <input placeholder="Номер телефона" autocomplete="off" type="tel" name="user_name" class="input__field">
-                          <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
-                        </div>
-                        <!-- /.input -->
-
-                        <div class="input mb-5">
-                          <input placeholder="Ваша электронная почта" autocomplete="off" type="email" name="user_name" class="input__field">
-                          <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
-                        </div>
-                        <!-- /.input -->
-
-                        <button data-sending="Отправка..." type="submit" class="button button--block button-primary" data-index="2">ЗАКАЗАТЬ УСЛУГУ</button>
-
-                        <div class="form__policy text-center">
-                          Нажимая на кнопку, Вы соглашаетесь с политикой
-                          <br>
-                          конфиденциальности
-                        </div>
-                        <!-- /.form__policy -->
-                      </form>
-                    </div>
-                    <!-- /.col-4 -->
-                  </div>
-                  <!-- /.row -->
-                </div>
-                <!-- /.service-item -->
-              </div>
-              <!-- /.swiper-slide -->
-
-              <div class="swiper-slide">
-                <div class="service-item">
-                  <div class="row">
-                    <div class="col-5 col-xxl-4 pe-5">
-                      <picture class="service-item__picture">
-                        <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/service/2.jpg" src="img/layout/service/thumb/2.jpg" alt="">
-                      </picture>
-                    </div>
-                    <!-- /.col-3 -->
-
-                    <div class="col-7 col-xxl-5 pe-5 d-flex flex-column">
-                      <div class="service-item__content">
-                        <h3 class="service-item__title">Экспресс консультация</h3>
-                        <p class="service-item__text">
-                          Как профессиональный травник, специализирующийся на лечении травами, ваши знания и навыки будут ценными и востребованными. Хотите ли вы преподавать, предоставлять консультации по травам или вести свой собственный травяной бизнес, вы можете стать травником.
-                          <br> <br>
-                          Со временем и обучением вы приобретете знания и навыки, необходимые для начала вашей карьеры в области траволечения.
-                        </p>
-                      </div>
-                      <!-- /.service-item__content -->
-
-                      <div class="service-item__action d-flex">
-                        <button class="button button--download button-primary">
-                          Скачать анкету
-                          <img class="ms-3" src="img/icons/misc/download.svg" alt="">
-                        </button>
-
-                        <button data-micromodal-trigger="modal-callback" class="button button-secondary ms-4 d-block d-xxl-none">
-                          Отправить заявку
-                        </button>
-                      </div>
-                      <!-- /.service-item__action -->
-                    </div>
-                    <!-- /.col-5 -->
-
-                    <div class="col-xxl-3 my-auto d-none d-xxl-block">
-                      <form action="" class="form">
-                        <div class="form__info">
-                          Заполните информацию и я Вам перезвоню
-                        </div>
-                        <!-- /.form__info -->
-
-                        <div class="input mb-3">
-                          <input placeholder="Ваше имя" autocomplete="off" type="text" name="user_name" class="input__field">
-                          <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
-                        </div>
-                        <!-- /.input -->
-
-                        <div class="input mb-3">
-                          <input placeholder="Номер телефона" autocomplete="off" type="tel" name="user_name" class="input__field">
-                          <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
-                        </div>
-                        <!-- /.input -->
-
-                        <div class="input mb-5">
-                          <input placeholder="Ваша электронная почта" autocomplete="off" type="email" name="user_name" class="input__field">
-                          <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
-                        </div>
-                        <!-- /.input -->
-
-                        <button data-sending="Отправка..." type="submit" class="button button--block button-primary" data-index="2">ЗАКАЗАТЬ УСЛУГУ</button>
-
-                        <div class="form__policy text-center">
-                          Нажимая на кнопку, Вы соглашаетесь с политикой
-                          <br>
-                          конфиденциальности
-                        </div>
-                        <!-- /.form__policy -->
-                      </form>
-                    </div>
-                    <!-- /.col-4 -->
-                  </div>
-                  <!-- /.row -->
-                </div>
-                <!-- /.service-item -->
-              </div>
-              <!-- /.swiper-slide -->
-
-              <div class="swiper-slide">
-                <div class="service-item">
-                  <div class="row">
-                    <div class="col-5 col-xxl-4 pe-5">
-                      <picture class="service-item__picture">
-                        <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/service/3.jpg" src="img/layout/service/thumb/3.jpg" alt="">
-                      </picture>
-                    </div>
-                    <!-- /.col-3 -->
-
-                    <div class="col-7 col-xxl-5 pe-5 d-flex flex-column">
-                      <div class="service-item__content">
-                        <h3 class="service-item__title">Экспресс консультация</h3>
-                        <p class="service-item__text">
-                          Как профессиональный травник, специализирующийся на лечении травами, ваши знания и навыки будут ценными и востребованными. Хотите ли вы преподавать, предоставлять консультации по травам или вести свой собственный травяной бизнес, вы можете стать травником.
-                          <br> <br>
-                          Со временем и обучением вы приобретете знания и навыки, необходимые для начала вашей карьеры в области траволечения.
-                        </p>
-                      </div>
-                      <!-- /.service-item__content -->
-
-                      <div class="service-item__action d-flex">
-                        <button class="button button--download button-primary">
-                          Скачать анкету
-                          <img class="ms-3" src="img/icons/misc/download.svg" alt="">
-                        </button>
-
-                        <button data-micromodal-trigger="modal-callback" class="button button-secondary ms-4 d-block d-xxl-none">
-                          Отправить заявку
-                        </button>
-                      </div>
-                      <!-- /.service-item__action -->
-                    </div>
-                    <!-- /.col-5 -->
-
-                    <div class="col-xxl-3 my-auto d-none d-xxl-block">
-                      <form action="" class="form">
-                        <div class="form__info">
-                          Заполните информацию и я Вам перезвоню
-                        </div>
-                        <!-- /.form__info -->
-
-                        <div class="input mb-3">
-                          <input placeholder="Ваше имя" autocomplete="off" type="text" name="user_name" class="input__field">
-                          <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
-                        </div>
-                        <!-- /.input -->
-
-                        <div class="input mb-3">
-                          <input placeholder="Номер телефона" autocomplete="off" type="tel" name="user_name" class="input__field">
-                          <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
-                        </div>
-                        <!-- /.input -->
-
-                        <div class="input mb-5">
-                          <input placeholder="Ваша электронная почта" autocomplete="off" type="email" name="user_name" class="input__field">
-                          <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
-                        </div>
-                        <!-- /.input -->
-
-                        <button data-sending="Отправка..." type="submit" class="button button--block button-primary" data-index="2">ЗАКАЗАТЬ УСЛУГУ</button>
-
-                        <div class="form__policy text-center">
-                          Нажимая на кнопку, Вы соглашаетесь с политикой
-                          <br>
-                          конфиденциальности
-                        </div>
-                        <!-- /.form__policy -->
-                      </form>
-                    </div>
-                    <!-- /.col-4 -->
-                  </div>
-                  <!-- /.row -->
-                </div>
-                <!-- /.service-item -->
-              </div>
-              <!-- /.swiper-slide -->
-
-              <div class="swiper-slide">
-                <div class="service-item">
-                  <div class="row">
-                    <div class="col-5 col-xxl-4 pe-5">
-                      <picture class="service-item__picture">
-                        <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/service/4.jpg" src="img/layout/service/thumb/4.jpg" alt="">
-                      </picture>
-                    </div>
-                    <!-- /.col-3 -->
-
-                    <div class="col-7 col-xxl-5 pe-5 d-flex flex-column">
-                      <div class="service-item__content">
-                        <h3 class="service-item__title">Экспресс коынсультация</h3>
-                        <p class="service-item__text">
-                          Как профессиональный травник, специализирующийся на лечении травами, ваши знания и навыки будут ценными и востребованными. Хотите ли вы преподавать, предоставлять консультации по травам или вести свой собственный травяной бизнес, вы можете стать травником.
-                          <br> <br>
-                          Со временем и обучением вы приобретете знания и навыки, необходимые для начала вашей карьеры в области траволечения.
-                        </p>
-                      </div>
-                      <!-- /.service-item__content -->
-
-                      <div class="service-item__action d-flex">
-                        <button class="button button--download button-primary">
-                          Скачать анкету
-                          <img class="ms-3" src="img/icons/misc/download.svg" alt="">
-                        </button>
-
-                        <button data-micromodal-trigger="modal-callback" class="button button-secondary ms-4 d-block d-xxl-none">
-                          Отправить заявку
-                        </button>
-                      </div>
-                      <!-- /.service-item__action -->
-                    </div>
-                    <!-- /.col-5 -->
-
-                    <div class="col-xxl-3 my-auto d-none d-xxl-block">
-                      <form action="" class="form">
-                        <div class="form__info">
-                          Заполните информацию и я Вам перезвоню
-                        </div>
-                        <!-- /.form__info -->
-
-                        <div class="input mb-3">
-                          <input placeholder="Ваше имя" autocomplete="off" type="text" name="user_name" class="input__field">
-                          <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
-                        </div>
-                        <!-- /.input -->
-
-                        <div class="input mb-3">
-                          <input placeholder="Номер телефона" autocomplete="off" type="tel" name="user_name" class="input__field">
-                          <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
-                        </div>
-                        <!-- /.input -->
-
-                        <div class="input mb-5">
-                          <input placeholder="Ваша электронная почта" autocomplete="off" type="email" name="user_name" class="input__field">
-                          <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
-                        </div>
-                        <!-- /.input -->
-
-                        <button data-sending="Отправка..." type="submit" class="button button--block button-primary" data-index="2">ЗАКАЗАТЬ УСЛУГУ</button>
-
-                        <div class="form__policy text-center">
-                          Нажимая на кнопку, Вы соглашаетесь с политикой
-                          <br>
-                          конфиденциальности
-                        </div>
-                        <!-- /.form__policy -->
-                      </form>
-                    </div>
-                    <!-- /.col-4 -->
-                  </div>
-                  <!-- /.row -->
-                </div>
-                <!-- /.service-item -->
-              </div>
-              <!-- /.swiper-slide -->
-            </div>
-            <!-- /.swiper-wrapper -->
-          </div>
-          <!-- /.swiper slider-service-content -->
+          <!-- /.container -->
         </div>
-        <!-- /.service -->
+        <!-- /.swiper slider-service -->
+
+
+        <div class="service__content">
+          <div class="container">
+            <div class="swiper slider-service-content">
+              <div class="swiper-wrapper" id="service-content">
+                <div class="swiper-slide">
+                  <div class="service-item">
+                    <div class="row">
+                      <div class="col-12 col-md-5 col-xxl-4 pe-lg-5">
+                        <picture class="service-item__picture position-sticky">
+                          <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/service/1.jpg" src="img/layout/service/thumb/1.jpg" alt="">
+                        </picture>
+                      </div>
+                      <!-- /.col-3 -->
+
+                      <div class="col-12 col-md-7 col-xxl-5 pe-md-5 d-flex flex-column">
+                        <div class="service-item__content">
+                          <h3 class="service-item__title">Экспресс консультация</h3>
+                          <p class="service-item__text">
+                            Как профессиональный травник, специализирующийся на лечении травами, ваши знания и навыки будут ценными и востребованными. Хотите ли вы преподавать, предоставлять консультации по травам или вести свой собственный травяной бизнес, вы можете стать травником.
+                            <br> <br>
+                            Со временем и обучением вы приобретете знания и навыки, необходимые для начала вашей карьеры в области траволечения.
+                          </p>
+                        </div>
+                        <!-- /.service-item__content -->
+
+                        <div class="service-item__action d-flex">
+                          <button class="button button--download button-primary mb-3 mb-lg-0">
+                            Скачать анкету
+                            <img class="ms-3" src="img/icons/misc/download.svg" alt="">
+                          </button>
+
+                          <button data-micromodal-trigger="modal-callback" class="button button-secondary ms-lg-4 d-block d-xxl-none">
+                            Отправить заявку
+                          </button>
+                        </div>
+                        <!-- /.service-item__action -->
+                      </div>
+                      <!-- /.col-5 -->
+
+                      <div class="col-xxl-3 my-auto d-none d-xxl-block">
+                        <form action="" class="form">
+                          <div class="form__info">
+                            Заполните информацию и я Вам перезвоню
+                          </div>
+                          <!-- /.form__info -->
+
+                          <div class="input mb-3">
+                            <input placeholder="Ваше имя" autocomplete="off" type="text" name="user_name" class="input__field">
+                            <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
+                          </div>
+                          <!-- /.input -->
+
+                          <div class="input mb-3">
+                            <input placeholder="Номер телефона" autocomplete="off" type="tel" name="user_name" class="input__field">
+                            <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
+                          </div>
+                          <!-- /.input -->
+
+                          <div class="input mb-5">
+                            <input placeholder="Ваша электронная почта" autocomplete="off" type="email" name="user_name" class="input__field">
+                            <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
+                          </div>
+                          <!-- /.input -->
+
+                          <button data-sending="Отправка..." type="submit" class="button button--block button-primary" data-index="2">ЗАКАЗАТЬ УСЛУГУ</button>
+
+                          <div class="form__policy text-center">
+                            Нажимая на кнопку, Вы соглашаетесь с политикой
+                            <br>
+                            конфиденциальности
+                          </div>
+                          <!-- /.form__policy -->
+                        </form>
+                      </div>
+                      <!-- /.col-4 -->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!-- /.service-item -->
+                </div>
+                <!-- /.swiper-slide -->
+
+                <div class="swiper-slide">
+                  <div class="service-item">
+                    <div class="row">
+                      <div class="col-5 col-xxl-4 pe-5">
+                        <picture class="service-item__picture">
+                          <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/service/2.jpg" src="img/layout/service/thumb/2.jpg" alt="">
+                        </picture>
+                      </div>
+                      <!-- /.col-3 -->
+
+                      <div class="col-7 col-xxl-5 pe-5 d-flex flex-column">
+                        <div class="service-item__content">
+                          <h3 class="service-item__title">Экспресс консультация</h3>
+                          <p class="service-item__text">
+                            Как профессиональный травник, специализирующийся на лечении травами, ваши знания и навыки будут ценными и востребованными. Хотите ли вы преподавать, предоставлять консультации по травам или вести свой собственный травяной бизнес, вы можете стать травником.
+                            <br> <br>
+                            Со временем и обучением вы приобретете знания и навыки, необходимые для начала вашей карьеры в области траволечения.
+                          </p>
+                        </div>
+                        <!-- /.service-item__content -->
+
+                        <div class="service-item__action d-flex">
+                          <button class="button button--download button-primary">
+                            Скачать анкету
+                            <img class="ms-3" src="img/icons/misc/download.svg" alt="">
+                          </button>
+
+                          <button data-micromodal-trigger="modal-callback" class="button button-secondary ms-4 d-block d-xxl-none">
+                            Отправить заявку
+                          </button>
+                        </div>
+                        <!-- /.service-item__action -->
+                      </div>
+                      <!-- /.col-5 -->
+
+                      <div class="col-xxl-3 my-auto d-none d-xxl-block">
+                        <form action="" class="form">
+                          <div class="form__info">
+                            Заполните информацию и я Вам перезвоню
+                          </div>
+                          <!-- /.form__info -->
+
+                          <div class="input mb-3">
+                            <input placeholder="Ваше имя" autocomplete="off" type="text" name="user_name" class="input__field">
+                            <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
+                          </div>
+                          <!-- /.input -->
+
+                          <div class="input mb-3">
+                            <input placeholder="Номер телефона" autocomplete="off" type="tel" name="user_name" class="input__field">
+                            <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
+                          </div>
+                          <!-- /.input -->
+
+                          <div class="input mb-5">
+                            <input placeholder="Ваша электронная почта" autocomplete="off" type="email" name="user_name" class="input__field">
+                            <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
+                          </div>
+                          <!-- /.input -->
+
+                          <button data-sending="Отправка..." type="submit" class="button button--block button-primary" data-index="2">ЗАКАЗАТЬ УСЛУГУ</button>
+
+                          <div class="form__policy text-center">
+                            Нажимая на кнопку, Вы соглашаетесь с политикой
+                            <br>
+                            конфиденциальности
+                          </div>
+                          <!-- /.form__policy -->
+                        </form>
+                      </div>
+                      <!-- /.col-4 -->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!-- /.service-item -->
+                </div>
+                <!-- /.swiper-slide -->
+
+                <div class="swiper-slide">
+                  <div class="service-item">
+                    <div class="row">
+                      <div class="col-5 col-xxl-4 pe-5">
+                        <picture class="service-item__picture">
+                          <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/service/3.jpg" src="img/layout/service/thumb/3.jpg" alt="">
+                        </picture>
+                      </div>
+                      <!-- /.col-3 -->
+
+                      <div class="col-7 col-xxl-5 pe-5 d-flex flex-column">
+                        <div class="service-item__content">
+                          <h3 class="service-item__title">Экспресс консультация</h3>
+                          <p class="service-item__text">
+                            Как профессиональный травник, специализирующийся на лечении травами, ваши знания и навыки будут ценными и востребованными. Хотите ли вы преподавать, предоставлять консультации по травам или вести свой собственный травяной бизнес, вы можете стать травником.
+                            <br> <br>
+                            Со временем и обучением вы приобретете знания и навыки, необходимые для начала вашей карьеры в области траволечения.
+                          </p>
+                        </div>
+                        <!-- /.service-item__content -->
+
+                        <div class="service-item__action d-flex">
+                          <button class="button button--download button-primary">
+                            Скачать анкету
+                            <img class="ms-3" src="img/icons/misc/download.svg" alt="">
+                          </button>
+
+                          <button data-micromodal-trigger="modal-callback" class="button button-secondary ms-4 d-block d-xxl-none">
+                            Отправить заявку
+                          </button>
+                        </div>
+                        <!-- /.service-item__action -->
+                      </div>
+                      <!-- /.col-5 -->
+
+                      <div class="col-xxl-3 my-auto d-none d-xxl-block">
+                        <form action="" class="form">
+                          <div class="form__info">
+                            Заполните информацию и я Вам перезвоню
+                          </div>
+                          <!-- /.form__info -->
+
+                          <div class="input mb-3">
+                            <input placeholder="Ваше имя" autocomplete="off" type="text" name="user_name" class="input__field">
+                            <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
+                          </div>
+                          <!-- /.input -->
+
+                          <div class="input mb-3">
+                            <input placeholder="Номер телефона" autocomplete="off" type="tel" name="user_name" class="input__field">
+                            <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
+                          </div>
+                          <!-- /.input -->
+
+                          <div class="input mb-5">
+                            <input placeholder="Ваша электронная почта" autocomplete="off" type="email" name="user_name" class="input__field">
+                            <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
+                          </div>
+                          <!-- /.input -->
+
+                          <button data-sending="Отправка..." type="submit" class="button button--block button-primary" data-index="2">ЗАКАЗАТЬ УСЛУГУ</button>
+
+                          <div class="form__policy text-center">
+                            Нажимая на кнопку, Вы соглашаетесь с политикой
+                            <br>
+                            конфиденциальности
+                          </div>
+                          <!-- /.form__policy -->
+                        </form>
+                      </div>
+                      <!-- /.col-4 -->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!-- /.service-item -->
+                </div>
+                <!-- /.swiper-slide -->
+
+                <div class="swiper-slide">
+                  <div class="service-item">
+                    <div class="row">
+                      <div class="col-5 col-xxl-4 pe-5">
+                        <picture class="service-item__picture">
+                          <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/service/4.jpg" src="img/layout/service/thumb/4.jpg" alt="">
+                        </picture>
+                      </div>
+                      <!-- /.col-3 -->
+
+                      <div class="col-7 col-xxl-5 pe-5 d-flex flex-column">
+                        <div class="service-item__content">
+                          <h3 class="service-item__title">Экспресс коынсультация</h3>
+                          <p class="service-item__text">
+                            Как профессиональный травник, специализирующийся на лечении травами, ваши знания и навыки будут ценными и востребованными. Хотите ли вы преподавать, предоставлять консультации по травам или вести свой собственный травяной бизнес, вы можете стать травником.
+                            <br> <br>
+                            Со временем и обучением вы приобретете знания и навыки, необходимые для начала вашей карьеры в области траволечения.
+                          </p>
+                        </div>
+                        <!-- /.service-item__content -->
+
+                        <div class="service-item__action d-flex">
+                          <button class="button button--download button-primary">
+                            Скачать анкету
+                            <img class="ms-3" src="img/icons/misc/download.svg" alt="">
+                          </button>
+
+                          <button data-micromodal-trigger="modal-callback" class="button button-secondary ms-4 d-block d-xxl-none">
+                            Отправить заявку
+                          </button>
+                        </div>
+                        <!-- /.service-item__action -->
+                      </div>
+                      <!-- /.col-5 -->
+
+                      <div class="col-xxl-3 my-auto d-none d-xxl-block">
+                        <form action="" class="form">
+                          <div class="form__info">
+                            Заполните информацию и я Вам перезвоню
+                          </div>
+                          <!-- /.form__info -->
+
+                          <div class="input mb-3">
+                            <input placeholder="Ваше имя" autocomplete="off" type="text" name="user_name" class="input__field">
+                            <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
+                          </div>
+                          <!-- /.input -->
+
+                          <div class="input mb-3">
+                            <input placeholder="Номер телефона" autocomplete="off" type="tel" name="user_name" class="input__field">
+                            <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
+                          </div>
+                          <!-- /.input -->
+
+                          <div class="input mb-5">
+                            <input placeholder="Ваша электронная почта" autocomplete="off" type="email" name="user_name" class="input__field">
+                            <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
+                          </div>
+                          <!-- /.input -->
+
+                          <button data-sending="Отправка..." type="submit" class="button button--block button-primary" data-index="2">ЗАКАЗАТЬ УСЛУГУ</button>
+
+                          <div class="form__policy text-center">
+                            Нажимая на кнопку, Вы соглашаетесь с политикой
+                            <br>
+                            конфиденциальности
+                          </div>
+                          <!-- /.form__policy -->
+                        </form>
+                      </div>
+                      <!-- /.col-4 -->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!-- /.service-item -->
+                </div>
+                <!-- /.swiper-slide -->
+              </div>
+              <!-- /.swiper-wrapper -->
+            </div>
+            <!-- /.swiper slider-service-content -->
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.service__content -->
       </div>
-      <!-- /.container -->
+      <!-- /.service -->
     </section>
 
     <section id="contact" class="section">

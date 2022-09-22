@@ -15,9 +15,17 @@
   }
 
   &__action {
+    @include breakpoint($breakpoint-tablet--large) {
+      flex-direction: column;
+    }
+
     margin-top: auto;
 
     .button {
+      @include breakpoint($breakpoint-tablet--large) {
+        font-size: $font-size__text--regular;
+      }
+
       font-weight: $weight-Regular;
       font-size: 20px;
     }

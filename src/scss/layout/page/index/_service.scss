@@ -1,13 +1,15 @@
 #service {
-
 }
 
 .service {
   &__list {
-
+    overflow: hidden;
   }
 
   &__content {
     margin-top: 80px;
+  }
+
+  &__action {
   }
 }
