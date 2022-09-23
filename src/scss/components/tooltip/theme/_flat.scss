@@ -1,0 +1,21 @@
+.tippy-box[data-theme~="flat"] {
+  z-index: 5;
+  padding: 0;
+
+  border-radius: 0;
+
+  background-color: $palette-white;
+  color: $color-text__black;
+
+  font-size: $font-size__text--regular;
+
+  filter: drop-shadow(0 0 5px rgba(#000000, 0.2));
+
+  .tippy-content {
+    padding: 15px;
+  }
+
+  .tippy-arrow {
+    color: $palette-white;
+  }
+}

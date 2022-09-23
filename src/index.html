@@ -802,56 +802,77 @@
 
     <section id="gallery" class="section">
       <div class="container">
-        <div class="gallery">
-          <div class="gallery__item">
-            <a data-fslightbox="gallery" href="">
-              <picture class="gallery__picture">
-                <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/gallery/1.jpg" src="img/layout/gallery/thumb/1.jpg" alt="">
-              </picture>
-            </a>
-          </div>
+        <div class="swiper slider-gallery">
+          <div class="swiper-wrapper gallery">
+            <div class="swiper-slide">
+              <div class="gallery__item">
+                <a data-fslightbox="gallery" href="">
+                  <picture class="gallery__picture">
+                    <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/gallery/1.jpg" src="img/layout/gallery/thumb/1.jpg" alt="">
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <!-- /.swiper-slide -->
 
-          <div class="gallery__item">
-            <a data-fslightbox="gallery" href="">
-              <picture class="gallery__picture">
-                <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/gallery/2.jpg" src="img/layout/gallery/thumb/2.jpg" alt="">
-              </picture>
-            </a>
-          </div>
+            <div class="swiper-slide">
+              <div class="gallery__item">
+                <a data-fslightbox="gallery" href="">
+                  <picture class="gallery__picture">
+                    <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/gallery/2.jpg" src="img/layout/gallery/thumb/2.jpg" alt="">
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <!-- /.swiper-slide -->
 
-          <div class="gallery__item gallery__item--video">
-            <a data-fslightbox="gallery" href="">
-              <picture class="gallery__picture">
-                <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/gallery/3.jpg" src="img/layout/gallery/thumb/3.jpg" alt="">
-              </picture>
-            </a>
-          </div>
+            <div class="swiper-slide">
+              <div class="gallery__item gallery__item--video">
+                <a data-fslightbox="gallery" href="">
+                  <picture class="gallery__picture">
+                    <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/gallery/3.jpg" src="img/layout/gallery/thumb/3.jpg" alt="">
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <!-- /.swiper-slide -->
 
-          <div class="gallery__item">
-            <a data-fslightbox="gallery" href="">
-              <picture class="gallery__picture">
-                <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/gallery/4.jpg" src="img/layout/gallery/thumb/4.jpg" alt="">
-              </picture>
-            </a>
-          </div>
+            <div class="swiper-slide">
+              <div class="gallery__item">
+                <a data-fslightbox="gallery" href="">
+                  <picture class="gallery__picture">
+                    <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/gallery/4.jpg" src="img/layout/gallery/thumb/4.jpg" alt="">
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <!-- /.swiper-slide -->
 
-          <div class="gallery__item">
-            <a data-fslightbox="gallery" href="">
-              <picture class="gallery__picture">
-                <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/gallery/5.jpg" src="img/layout/gallery/thumb/5.jpg" alt="">
-              </picture>
-            </a>
-          </div>
+            <div class="swiper-slide">
+              <div class="gallery__item">
+                <a data-fslightbox="gallery" href="">
+                  <picture class="gallery__picture">
+                    <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/gallery/5.jpg" src="img/layout/gallery/thumb/5.jpg" alt="">
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <!-- /.swiper-slide -->
 
-          <div class="gallery__item">
-            <a data-fslightbox="gallery" href="">
-              <picture class="gallery__picture">
-                <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/gallery/6.jpg" src="img/layout/gallery/thumb/6.jpg" alt="">
-              </picture>
-            </a>
+            <div class="swiper-slide">
+              <div class="gallery__item">
+                <a data-fslightbox="gallery" href="">
+                  <picture class="gallery__picture">
+                    <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/gallery/6.jpg" src="img/layout/gallery/thumb/6.jpg" alt="">
+                  </picture>
+                </a>
+              </div>
+            </div>
+            <!-- /.swiper-slide -->
           </div>
+          <!-- /.gallery -->
         </div>
-        <!-- /.gallery -->
+        <!-- /.swiper slider-gallery -->
       </div>
       <!-- /.container -->
     </section>
@@ -940,7 +961,6 @@
         </div>
         <!-- /.swiper slider-service -->
 
-
         <div class="service__content">
           <div class="container">
             <div class="swiper slider-service-content">
@@ -989,19 +1009,19 @@
 
                           <div class="input mb-3">
                             <input placeholder="Ваше имя" autocomplete="off" type="text" name="user_name" class="input__field">
-                            <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
+                            <img data-tippy-content="Имя содержит ошибки" class="input__warning" src="img/icons/misc/warning.svg" alt="">
                           </div>
                           <!-- /.input -->
 
                           <div class="input mb-3">
-                            <input placeholder="Номер телефона" autocomplete="off" type="tel" name="user_name" class="input__field">
-                            <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
+                            <input placeholder="Номер телефона" autocomplete="off" type="tel" name="user_phone" class="input__field">
+                            <img data-tippy-content="Телефон содержит ошибки" class="input__warning" src="img/icons/misc/warning.svg" alt="">
                           </div>
                           <!-- /.input -->
 
                           <div class="input mb-5">
-                            <input placeholder="Ваша электронная почта" autocomplete="off" type="email" name="user_name" class="input__field">
-                            <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
+                            <input placeholder="Ваша электронная почта" autocomplete="off" type="email" name="user_email" class="input__field">
+                            <img data-tippy-content="Почта содержит ошибки" class="input__warning" src="img/icons/misc/warning.svg" alt="">
                           </div>
                           <!-- /.input -->
 
@@ -1067,19 +1087,19 @@
 
                           <div class="input mb-3">
                             <input placeholder="Ваше имя" autocomplete="off" type="text" name="user_name" class="input__field">
-                            <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
+                            <img data-tippy-content="Имя содержит ошибки" class="input__warning" src="img/icons/misc/warning.svg" alt="">
                           </div>
                           <!-- /.input -->
 
                           <div class="input mb-3">
                             <input placeholder="Номер телефона" autocomplete="off" type="tel" name="user_name" class="input__field">
-                            <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
+                            <img data-tippy-content="Имя содержит ошибки" class="input__warning" src="img/icons/misc/warning.svg" alt="">
                           </div>
                           <!-- /.input -->
 
                           <div class="input mb-5">
                             <input placeholder="Ваша электронная почта" autocomplete="off" type="email" name="user_name" class="input__field">
-                            <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
+                            <img data-tippy-content="Имя содержит ошибки" class="input__warning" src="img/icons/misc/warning.svg" alt="">
                           </div>
                           <!-- /.input -->
 
@@ -1145,19 +1165,19 @@
 
                           <div class="input mb-3">
                             <input placeholder="Ваше имя" autocomplete="off" type="text" name="user_name" class="input__field">
-                            <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
+                            <img data-tippy-content="Имя содержит ошибки" class="input__warning" src="img/icons/misc/warning.svg" alt="">
                           </div>
                           <!-- /.input -->
 
                           <div class="input mb-3">
                             <input placeholder="Номер телефона" autocomplete="off" type="tel" name="user_name" class="input__field">
-                            <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
+                            <img data-tippy-content="Имя содержит ошибки" class="input__warning" src="img/icons/misc/warning.svg" alt="">
                           </div>
                           <!-- /.input -->
 
                           <div class="input mb-5">
                             <input placeholder="Ваша электронная почта" autocomplete="off" type="email" name="user_name" class="input__field">
-                            <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
+                            <img data-tippy-content="Имя содержит ошибки" class="input__warning" src="img/icons/misc/warning.svg" alt="">
                           </div>
                           <!-- /.input -->
 
@@ -1223,19 +1243,19 @@
 
                           <div class="input mb-3">
                             <input placeholder="Ваше имя" autocomplete="off" type="text" name="user_name" class="input__field">
-                            <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
+                            <img data-tippy-content="Имя содержит ошибки" class="input__warning" src="img/icons/misc/warning.svg" alt="">
                           </div>
                           <!-- /.input -->
 
                           <div class="input mb-3">
                             <input placeholder="Номер телефона" autocomplete="off" type="tel" name="user_name" class="input__field">
-                            <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
+                            <img data-tippy-content="Имя содержит ошибки" class="input__warning" src="img/icons/misc/warning.svg" alt="">
                           </div>
                           <!-- /.input -->
 
                           <div class="input mb-5">
                             <input placeholder="Ваша электронная почта" autocomplete="off" type="email" name="user_name" class="input__field">
-                            <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
+                            <img data-tippy-content="Имя содержит ошибки" class="input__warning" src="img/icons/misc/warning.svg" alt="">
                           </div>
                           <!-- /.input -->
 
@@ -1285,7 +1305,7 @@
               <form action="" class="form d-flex flex-column flex-md-row justify-content-center px-3">
                 <div class="input mb-3 mb-md-0 me-md-4">
                   <input placeholder="Номер телефона" autocomplete="off" type="tel" name="user_name" class="input__field">
-                  <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
+                  <img data-tippy-content="Имя содержит ошибки" class="input__warning" src="img/icons/misc/warning.svg" alt="">
                 </div>
                 <!-- /.input -->
 
@@ -1368,19 +1388,19 @@
 
             <div class="input mb-3">
               <input placeholder="Ваше имя" autocomplete="off" type="text" name="user_name" class="input__field">
-              <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
+              <img data-tippy-content="Имя содержит ошибки" class="input__warning" src="img/icons/misc/warning.svg" alt="">
             </div>
             <!-- /.input -->
 
             <div class="input mb-3">
-              <input placeholder="Номер телефона" autocomplete="off" type="tel" name="user_name" class="input__field">
-              <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
+              <input placeholder="Номер телефона" autocomplete="off" type="tel" name="user_phone" class="input__field">
+              <img data-tippy-content="Телефон содержит ошибки" class="input__warning" src="img/icons/misc/warning.svg" alt="">
             </div>
             <!-- /.input -->
 
             <div class="input mb-5">
-              <input placeholder="Ваша электронная почта" autocomplete="off" type="email" name="user_name" class="input__field">
-              <img data-tippy-content="Имя содежит ошибки" class="input__warning" src="" alt="">
+              <input placeholder="Ваша электронная почта" autocomplete="off" type="email" name="user_email" class="input__field">
+              <img data-tippy-content="Почта содержит ошибки" class="input__warning" src="img/icons/misc/warning.svg" alt="">
             </div>
             <!-- /.input -->
 
@@ -1421,6 +1441,9 @@
   <!-- Скрипты -->
   <!-- build:js js/script.min.js -->
   <script src="scripts/libraries/lazyload.js"></script>
+  <script src="scripts/libraries/imask.js"></script>
+  <script src="scripts/libraries/popper.js"></script>
+  <script src="scripts/libraries/tippy.js"></script>
   <script src="scripts/libraries/forms.js"></script>
   <script src="scripts/libraries/swiper.min.js"></script>
   <script src="scripts/libraries/smoothScroll.js"></script>

@@ -1,4 +1,17 @@
 .input {
+  position: relative;
+
+  &--error {
+    .input__field {
+      border-color: #e64747;
+    }
+
+    .input__warning {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
   &__field {
     @include border($palette-white);
 
@@ -12,5 +25,22 @@
 
     font-weight: $weight-Light;
     font-size: $font-size__text--regular;
+  }
+
+  &__warning {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+
+    width: 26px;
+    height: 26px;
+
+    opacity: 0;
+    visibility: hidden;
+
+    cursor: help;
+    transform: translateY(-50%);
+
+    transition: 0.2s ease;
   }
 }
