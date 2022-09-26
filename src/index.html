@@ -216,7 +216,7 @@
             </p>
 
             <div class="hero__action d-block d-md-none mt-4">
-              <button class="button button--large button-primary mx-auto">Получить консультацию</button>
+              <button data-subject="Получить консультацию" data-micromodal-trigger="modal-callback" class="button button--large button-primary mx-auto">Получить консультацию</button>
             </div>
             <!-- /.hero__action -->
 
@@ -440,7 +440,7 @@
                 </div>
                 <!-- /.about__content -->
 
-                <button class="button button--large button-primary mx-auto d-none d-md-block">Получить консультацию</button>
+                <button data-subject="Получить консультацию" data-micromodal-trigger="modal-callback" class="button button--large button-primary mx-auto d-none d-md-block">Получить консультацию</button>
 
                 <div class="about__content">
                   <p>
@@ -992,7 +992,7 @@
                             <img class="ms-3" src="img/icons/misc/download.svg" alt="">
                           </button>
 
-                          <button data-micromodal-trigger="modal-callback" class="button button-secondary ms-lg-4 d-block d-xxl-none">
+                          <button data-subject="ТЕСТ" data-micromodal-trigger="modal-callback" class="button button-secondary ms-lg-4 d-block d-xxl-none">
                             Отправить заявку
                           </button>
                         </div>
@@ -1001,7 +1001,7 @@
                       <!-- /.col-5 -->
 
                       <div class="col-xxl-3 my-auto d-none d-xxl-block">
-                        <form action="" class="form">
+                        <form action="" data-target="callback" data-subject="" class="form">
                           <div class="form__info">
                             Заполните информацию и я Вам перезвоню
                           </div>
@@ -1079,7 +1079,7 @@
                       <!-- /.col-5 -->
 
                       <div class="col-xxl-3 my-auto d-none d-xxl-block">
-                        <form action="" class="form">
+                        <form action="" data-target="callback" data-subject="" class="form">
                           <div class="form__info">
                             Заполните информацию и я Вам перезвоню
                           </div>
@@ -1157,7 +1157,7 @@
                       <!-- /.col-5 -->
 
                       <div class="col-xxl-3 my-auto d-none d-xxl-block">
-                        <form action="" class="form">
+                        <form action="" data-target="callback" data-subject="" class="form">
                           <div class="form__info">
                             Заполните информацию и я Вам перезвоню
                           </div>
@@ -1235,7 +1235,7 @@
                       <!-- /.col-5 -->
 
                       <div class="col-xxl-3 my-auto d-none d-xxl-block">
-                        <form action="" class="form">
+                        <form action="" data-target="callback" data-subject="" class="form">
                           <div class="form__info">
                             Заполните информацию и я Вам перезвоню
                           </div>
@@ -1302,7 +1302,7 @@
               </div>
               <!-- /.section__header -->
 
-              <form action="" class="form d-flex flex-column flex-md-row justify-content-center px-3">
+              <form action="" data-target="callback" data-subject="" class="form d-flex flex-column flex-md-row justify-content-center px-3">
                 <div class="input mb-3 mb-md-0 me-md-4">
                   <input placeholder="Номер телефона" autocomplete="off" type="tel" name="user_name" class="input__field">
                   <img data-tippy-content="Имя содержит ошибки" class="input__warning" src="img/icons/misc/warning.svg" alt="">
@@ -1376,7 +1376,7 @@
         </header>
 
         <main class="modal__content">
-          <form action="" class="modal__form form">
+          <form action="" data-target="callback" data-subject="" class="modal__form form">
             <h3 class="modal__title">
               Название услуги
             </h3>
@@ -1450,12 +1450,13 @@
   <script src="scripts/libraries/fslightbox.js"></script>
   <script src="scripts/libraries/micromodal.min.js"></script>
 
-  <script src="scripts/base.js"></script>
-  <script src="scripts/init.js"></script>
-  <script src="scripts/slider.js"></script>
-  <script src="scripts/header.js"></script>
-  <script src="scripts/blog.js"></script>
-  <script src="scripts/service.js"></script>
+  <script src="scripts/0_base.js"></script>
+  <script src="scripts/1_init.js"></script>
+  <script src="scripts/2_slider.js"></script>
+  <script src="scripts/3_header.js"></script>
+  <script src="scripts/4_blog.js"></script>
+  <script src="scripts/5_service.js"></script>
+  <script src="scripts/6_modal.js"></script>
   <!-- endbuild -->
 </body>
 

@@ -2,6 +2,10 @@ $transition-time: 0.2s;
 
 .modal {
   &__overlay {
+    @include breakpoint($breakpoint-mobile--large) {
+      align-items: flex-end;
+    }
+
     position: fixed;
     z-index: $z-index-modal;
     top: 0;
@@ -17,6 +21,13 @@ $transition-time: 0.2s;
   }
 
   &__container {
+    @include breakpoint($breakpoint-mobile--large) {
+      width: 95%;
+
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
     position: relative;
 
     width: 100%;
@@ -31,6 +42,10 @@ $transition-time: 0.2s;
   }
 
   &__title {
+    @include breakpoint($breakpoint-mobile--large) {
+      font-size: 21px;
+    }
+
     margin-bottom: 12px;
 
     font-size: $font-size__title--small;
@@ -40,6 +55,14 @@ $transition-time: 0.2s;
   }
 
   &__close {
+    @include breakpoint($breakpoint-mobile--large) {
+      top: 20px;
+      right: 20px;
+
+      width: 18px;
+      height: 18px;
+    }
+
     position: absolute;
     z-index: 3;
     top: 25px;

@@ -29,6 +29,10 @@
     margin-bottom: 24px;
 
     transition: $transition ease;
+
+    img {
+      transition: $transition ease;
+    }
   }
 
   &__title {

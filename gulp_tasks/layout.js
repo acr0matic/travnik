@@ -11,8 +11,8 @@ task('layout', () => src(paths.html.src)
   .pipe(htmlMin({
     sortAttributes: true,
     sortClassName: true,
-    removeComments: true, // Отключить, если требуется посадка верстки на CMS
-    collapseWhitespace: true, // Отключить, если требуется посадка верстки на CMS
+    removeComments: false, // Отключить, если требуется посадка верстки на CMS
+    collapseWhitespace: false, // Отключить, если требуется посадка верстки на CMS
   }))
   .pipe(dest(paths.html.dist))
   .pipe(browsersync.stream()));

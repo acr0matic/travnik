@@ -63,7 +63,12 @@ const SLIDER_SERVICE_CONTENT = new Swiper('.slider-service-content', {
   speed: 800,
   slidesPerView: 1,
   simulateTouch: false,
+  allowTouchMove: false,
   autoHeight: true,
+
+  observer: true,
+  observeParents: true,
+  observeSlideChildren: true,
 
   a11y: {
     enabled: false,
@@ -116,7 +121,12 @@ const SLIDER_BLOG_CONTENT = new Swiper('.slider-blog-content', {
   speed: 800,
   slidesPerView: 1,
   simulateTouch: false,
+  allowTouchMove: false,
   autoHeight: true,
+
+  observer: true,
+  observeParents: true,
+  observeSlideChildren: true,
 
   a11y: {
     enabled: false,

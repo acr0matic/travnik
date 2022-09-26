@@ -13,6 +13,10 @@
   }
 
   &__field {
+    @include breakpoint($breakpoint-mobile--large) {
+      padding: 15px 20px;
+    }
+
     @include border($palette-white);
 
     width: 100%;

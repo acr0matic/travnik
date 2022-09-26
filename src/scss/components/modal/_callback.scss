@@ -1,5 +1,9 @@
 .modal-callback {
   .modal__content {
+    @include breakpoint($breakpoint-mobile--large) {
+      padding: 45px 15px 15px;
+    }
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -9,5 +13,11 @@
 
   .modal__form {
     width: 100%;
+  }
+
+  .form__info {
+    @include breakpoint($breakpoint-mobile--large) {
+      margin-bottom: 15px;
+    }
   }
 }

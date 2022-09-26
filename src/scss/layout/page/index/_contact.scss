@@ -1,4 +1,6 @@
 #contact {
+  overflow: hidden;
+
   .section__title {
     @include breakpoint($breakpoint-tablet) {
       font-size: $font-size__text--large + 6px;
