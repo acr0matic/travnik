@@ -3,7 +3,9 @@ const header = document.getElementById('header');
 if (header) {
   const hero = document.querySelector('.hero');
   const heroHeight = hero.offsetHeight;
+
   let isReach = false;
+  let isOpen = false;
 
   MaxHeight(header);
   window.addEventListener('resize', () => MaxHeight(header));
@@ -16,7 +18,7 @@ if (header) {
   window.addEventListener('scroll', () => {
     isReach = window.scrollY >= heroHeight;
 
-    if (isReach) header.classList.add('header-background');
+    if (isReach || isOpen) header.classList.add('header-background');
     else header.classList.remove('header-background');
   });
 
@@ -31,6 +33,8 @@ if (header) {
   });
 
   function Menu() {
+    isOpen = !isOpen;
+
     if (!isReach) header.classList.toggle('header-background');
 
     mobile.classList.toggle('mobile-menu--open');
