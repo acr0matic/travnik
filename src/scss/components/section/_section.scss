@@ -8,6 +8,10 @@
       margin-bottom: 80px;
     }
 
+    @include breakpoint($breakpoint-tablet) {
+      margin-bottom: 60px;
+    }
+
     margin-bottom: 200px;
   }
 
@@ -16,23 +20,24 @@
       margin-bottom: 20px;
     }
 
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 
   &__title {
     @include breakpoint($breakpoint-laptop--large) {
-      font-size: 64px;
+      font-size: 40px;
     }
 
     @include breakpoint($breakpoint-laptop) {
-      font-size: 40px;
+      font-size: 36px;
     }
 
     @include breakpoint($breakpoint-tablet) {
       font-size: $font-size__text--large;
     }
 
-    font-size: 96px;
+    font-size: 48px;
     line-height: 1.1;
+    text-transform: uppercase;
   }
 }
