@@ -1,6 +1,8 @@
 const service = document.getElementById('service');
 
 if (service) {
+  const collapse = service.querySelector('.content-collapse');
+
   const cards = service.querySelectorAll('.service-card');
   cards.forEach(card => {
     const button = card.querySelector('.button');
@@ -8,6 +10,7 @@ if (service) {
 
     button.addEventListener('click', (e) => {
       SLIDER_SERVICE_CONTENT.slideTo(index);
+      collapse.classList.remove('content-collapse--hidden');
     });
   });
 

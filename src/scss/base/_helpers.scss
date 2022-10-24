@@ -5,3 +5,15 @@
 .position-sticky {
   top: calc(20px + var(--header-height));
 }
+
+.content-collapse {
+  max-height: 1500px;
+  transition: $transition ease;
+
+  &--hidden {
+    overflow: hidden;
+    max-height: 0;
+
+    margin-top: 0 !important;
+  }
+}

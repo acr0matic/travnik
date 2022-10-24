@@ -1,9 +1,6 @@
 const header = document.getElementById('header');
 
 if (header) {
-  const hero = document.querySelector('.hero');
-  const heroHeight = hero.offsetHeight;
-
   let isReach = false;
   let isOpen = false;
 
