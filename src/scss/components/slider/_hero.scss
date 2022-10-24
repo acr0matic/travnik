@@ -4,9 +4,13 @@
       top: 40px;
     }
 
-    @include breakpoint($breakpoint-tablet) {
-      top: 10px;
+    @include breakpoint($breakpoint-tablet--large) {
+      top: 18px;
       text-align: center;
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      display: none;
     }
 
     top: 60px;

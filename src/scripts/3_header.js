@@ -1,6 +1,8 @@
 const header = document.getElementById('header');
+const hero = document.getElementById('hero');
 
 if (header) {
+  let heroHeight = hero.offsetHeight;
   let isReach = false;
   let isOpen = false;
 

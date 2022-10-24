@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 
 #header {
-  @include breakpoint($breakpoint-tablet) {
+  @include breakpoint($breakpoint-tablet--large) {
     background-color: transparent;
   }
 
@@ -21,15 +21,24 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 
   padding: 20px 0;
 
   &-background {
     background-color: $palette-black !important;
-    box-shadow:
-      0 3px 1px rgba(#000000, 0.028),
-      0 1px 4px rgba(#000000, 0.042),
+    box-shadow: 0 3px 1px rgba(#000000, 0.028), 0 1px 4px rgba(#000000, 0.042);
+  }
+
+  &__logo {
+    margin-right: 60px;
+  }
+
+  &__contact {
+    margin-right: 60px;
+    margin-left: auto;
+  }
+
+  &__callback {
   }
 
   &__action {
