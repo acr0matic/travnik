@@ -15,7 +15,7 @@ const paths = require('../gulpfile');
 */
 
 task('scripts', () => src(paths.scripts.src)
-  .pipe(babel())
+  // .pipe(babel())
   .pipe(addsrc.prepend(paths.scripts.polyfills))
   .pipe(addsrc.prepend(paths.scripts.libraries))
   .pipe(concat(paths.scripts.out))
