@@ -1,6 +1,6 @@
 .button {
   @include breakpoint($breakpoint-tablet--large) {
-    padding: 14px 30px;
+    padding: 14px 50px;
   }
 
   @include breakpoint($breakpoint-tablet) {
