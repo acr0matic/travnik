@@ -3,15 +3,20 @@
 // -----------------------------------------------------------------------------
 
 #footer {
+  @include breakpoint($breakpoint-tablet) {
+    padding-top: 30px;
+  }
+
   padding-bottom: 30px;
 }
 
 .footer {
-  @include breakpoint($breakpoint-tablet) {
+  @include breakpoint($breakpoint-mobile--large) {
     flex-direction: column;
   }
 
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 
   & > *:not(:last-child) {
@@ -20,7 +25,7 @@
     }
   }
 
-  &__copyright {
+  &__logo {
     @include breakpoint($breakpoint-tablet) {
       margin-right: 0;
     }
@@ -28,11 +33,31 @@
     margin-right: 70px;
   }
 
+  &__callback .callback {
+    font-size: 24px;
+  }
+
   &__social {
+    @include breakpoint($breakpoint-tablet--large) {
+      width: 50%;
+      margin: 40px 0 0 !important;
+    }
+
     @include breakpoint($breakpoint-tablet) {
       margin-left: 0;
     }
 
-    margin-left: auto;
+    @include breakpoint($breakpoint-mobile--large) {
+      width: initial;
+      margin: 15px 0 0 !important;
+    }
+
+    margin-left: 70px;
+
+    img {
+      @include breakpoint($breakpoint-tablet) {
+        width: 42px;
+      }
+    }
   }
 }

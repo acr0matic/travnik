@@ -1,0 +1,92 @@
+@keyframes jump-shaking {
+  0% {
+    transform: translateX(0);
+  }
+
+  15% {
+    transform: rotate(-17deg);
+  }
+
+  35% {
+    transform: rotate(17deg);
+  }
+
+  55% {
+    transform: rotate(-17deg);
+  }
+
+  65% {
+    transform: rotate(17deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.widget {
+  position: fixed;
+  z-index: 50;
+  right: 25px;
+  bottom: 25px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  transition: $transition ease;
+
+  &--hide {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  &__link {
+    &--hide {
+      pointer-events: none;
+
+      .widget__icon {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
+
+  &__icon {
+    @include breakpoint($breakpoint-tablet) {
+      width: 48px;
+    }
+
+    width: 50px;
+
+    margin-bottom: 15px;
+
+    opacity: 1;
+    visibility: visible;
+
+    cursor: pointer;
+    transition: all 0.15s ease;
+
+    &--big {
+      @include breakpoint($breakpoint-tablet) {
+        width: 64px;
+      }
+
+      width: 70px;
+
+      animation-name: jump-shaking;
+      animation-duration: 2s;
+      animation-delay: 3s;
+      animation-iteration-count: infinite;
+    }
+
+    &:hover {
+      @include breakpoint($breakpoint-tablet) {
+        opacity: 1;
+      }
+
+      opacity: 0.7;
+    }
+  }
+}
