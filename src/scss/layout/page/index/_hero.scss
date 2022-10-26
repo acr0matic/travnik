@@ -4,7 +4,7 @@
   }
 
   @include breakpoint($breakpoint-tablet) {
-    margin-bottom: 210px;
+    margin-bottom: 160px;
   }
 
   position: relative;
@@ -36,7 +36,7 @@
 
   &__content {
     @include breakpoint($breakpoint-tablet) {
-      top: 125%;
+      top: 115%;
       text-align: center;
     }
 
@@ -95,8 +95,8 @@
 
   &__nav {
     position: absolute;
-    top: -25%;
-    right: 10px;
+    top: -50%;
+    right: 5%;
   }
 
   &__image {

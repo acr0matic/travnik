@@ -1,0 +1,84 @@
+#herbalism {
+}
+
+.herbalism {
+  &__block {
+    picture {
+      @include breakpoint($breakpoint-tablet--large) {
+        width: 300px;
+      }
+
+      @include breakpoint($breakpoint-mobile--large) {
+        width: 100%;
+        margin: 0 0 30px !important;
+      }
+    }
+
+    &:not(:last-child) {
+      @include breakpoint($breakpoint-laptop) {
+        margin-bottom: 60px !important;
+      }
+
+      @include breakpoint($breakpoint-mobile--large) {
+        margin-bottom: 20px !important;
+      }
+
+      picture {
+        @include breakpoint($breakpoint-tablet--large) {
+          margin-right: 25px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      @include breakpoint($breakpoint-laptop--large) {
+        margin-top: 80px;
+        margin-bottom: 50px;
+      }
+
+      @include breakpoint($breakpoint-mobile--large) {
+        margin-top: 0;
+      }
+
+      margin-top: 120px;
+      margin-bottom: 100px;
+
+      .button {
+        margin-top: 55px;
+      }
+
+      picture {
+        @include breakpoint($breakpoint-tablet--large) {
+          margin-left: 20px;
+        }
+      }
+    }
+
+    .button {
+      @include breakpoint($breakpoint-laptop) {
+        width: 100%;
+        max-width: 380px;
+        margin-top: 40px !important;
+      }
+    }
+  }
+
+  &__content {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    p {
+      @include breakpoint($breakpoint-tablet) {
+        br {
+          display: none;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

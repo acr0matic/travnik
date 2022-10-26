@@ -1,7 +1,7 @@
 .section {
   &:not(:last-child) {
     @include breakpoint($breakpoint-laptop--large) {
-      margin-bottom: 140px;
+      margin-bottom: 120px;
     }
 
     @include breakpoint($breakpoint-tablet--large) {
@@ -12,7 +12,7 @@
       margin-bottom: 60px;
     }
 
-    margin-bottom: 200px;
+    margin-bottom: 160px;
   }
 
   &__header {
@@ -29,7 +29,7 @@
     }
 
     @include breakpoint($breakpoint-laptop) {
-      font-size: 36px;
+      font-size: 32px;
     }
 
     @include breakpoint($breakpoint-tablet) {

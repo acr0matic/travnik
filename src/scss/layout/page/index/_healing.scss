@@ -1,0 +1,43 @@
+#healing {
+}
+
+.healing {
+  &__advantages {
+    @include breakpoint($breakpoint-laptop) {
+      margin-bottom: 60px;
+    }
+
+    margin-bottom: 120px;
+  }
+
+  &__item {
+    @include breakpoint($breakpoint-laptop--large) {
+      font-size: 27px;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      font-size: 18px;
+    }
+
+    font-size: 36px;
+    font-family: ArodoraPro, sans-serif;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    &::before {
+      content: "✓";
+    }
+  }
+
+  &__block {
+    &:not(:last-child) {
+      @include breakpoint($breakpoint-mobile--large) {
+        margin-bottom: 24px;
+      }
+
+      margin-bottom: 80px;
+    }
+  }
+}
