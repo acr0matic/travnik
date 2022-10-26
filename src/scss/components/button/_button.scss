@@ -1,8 +1,4 @@
 .button {
-  @include breakpoint($breakpoint-laptop--large) {
-    padding: 18px 30px;
-  }
-
   @include breakpoint($breakpoint-tablet--large) {
     padding: 14px 30px;
   }
@@ -14,7 +10,7 @@
   @include border(transparent);
 
   display: block;
-  padding: 16px 35px;
+  padding: 18px 70px;
 
   outline: none;
 

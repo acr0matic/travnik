@@ -1,0 +1,18 @@
+#faq {
+}
+
+.faq {
+  &__accordion {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__action {
+    margin-top: 40px;
+
+    .button {
+      margin: 0 auto;
+    }
+  }
+}

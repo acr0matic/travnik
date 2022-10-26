@@ -11,6 +11,10 @@
 }
 
 .contact {
+  @include breakpoint($breakpoint-laptop) {
+    margin-top: 0;
+  }
+
   position: relative;
   margin-top: 80px;
 
