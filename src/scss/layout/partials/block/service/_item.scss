@@ -1,5 +1,39 @@
 .service-item {
+  &__form {
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-top: 100px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      margin-top: 50px;
+    }
+  }
+
+  &__picture {
+    @include breakpoint($breakpoint-laptop) {
+      height: 510px;
+    }
+
+    @include breakpoint($breakpoint-tablet--large) {
+      position: sticky;
+      top: calc(20px + var(--header-height));
+
+      height: 350px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      max-width: 360px;
+      margin-bottom: 40px;
+    }
+
+    height: 560px;
+  }
+
   &__content {
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-top: 0;
+    }
+
     display: flex;
     flex-direction: column;
 
@@ -8,8 +42,13 @@
   }
 
   &__title {
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-bottom: 25px;
+      font-size: 18px;
+    }
+
     margin-bottom: 40px;
-    font-size: 26px;
+    font-size: 24px;
 
     text-transform: uppercase;
   }

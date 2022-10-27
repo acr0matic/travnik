@@ -1,6 +1,10 @@
 .form {
   &__info,
   &__policy {
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-bottom: 20px;
+    }
+
     margin-bottom: 50px;
     text-align: center;
   }
@@ -10,6 +14,10 @@
   }
 
   &__policy {
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-top: 16px;
+    }
+
     @include breakpoint($breakpoint-mobile--large) {
       br {
         display: none;
