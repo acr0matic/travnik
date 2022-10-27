@@ -466,9 +466,8 @@
               </div>
               <!-- /.col-5 -->
 
-              <div class="col-12 col-lg-7 col-xxl-6 pe-lg-5 pe-xxl-0">
+              <div class="col-12 col-lg-7 col-xxl-6 pe-lg-5 pe-xxl-0 d-flex flex-column">
                 <div class="herbalism__content">
-
                   <picture class="float-end d-block d-lg-none">
                     <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/herbalism/2.jpg" src="img/layout/herbalism/thumb/2.jpg" alt="">
                   </picture>
@@ -508,7 +507,7 @@
                 </div>
                 <!-- /.herbalism__content -->
 
-                <button data-micromodal-trigger="modal-callback" data-subject="Консультация" class="button button--large button-primary mx-auto">Получить консультацию</button>
+                <a href="#contact-anchor" class="button button--large button-primary mx-auto">Получить консультацию</a>
               </div>
               <!-- /.col-7 -->
             </div>
@@ -692,7 +691,7 @@
             </div>
             <!-- /.col-4 -->
 
-            <div class="col-12 col-lg-8 ps-lg-5">
+            <div class="col-12 col-lg-8 ps-lg-5 d-flex flex-column">
               <div class="section__header text-center">
                 <h2 class="section__title">
                   Меня сложно найти, легко потерять и невозможно забыть!
@@ -706,7 +705,7 @@
                 Просто запишитесь на консультацию
               </p>
 
-              <button data-micromodal-trigger="modal-callback" data-subject="Консультация" class="about__button button button--large button-primary mx-auto">Получить консультацию</button>
+              <a href="#contact-anchor" class="about__button button button--large button-primary mx-auto">Получить консультацию</a>
 
               <p>
                 Если у вас остались вопросы, Вы можете написать нашему менеджеру или посмотреть в разделе Вопрос-Ответ.
@@ -761,7 +760,7 @@
                       <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/blog/1.jpg" src="img/layout/blog/thumb/1.jpg" alt="">
                     </picture>
 
-                    <h3 class="card__title">Название статьи</h3>
+                    <h3 class="card__title">Название статьи Название статьи Название статьи</h3>
 
                     <p class="card__description">
                       Травничество - это терапевтическое использование растений для укрепления здоровья и профилактики или лечения болезней.
@@ -2020,6 +2019,7 @@
     </section>
 
     <section id="contact" class="section">
+      <div id="contact-anchor"></div>
       <div class="contact">
         <div class="container">
           <div class="contact__content">
@@ -2118,59 +2118,6 @@
     </div>
     <!-- /.container -->
   </footer>
-
-  <div class="modal modal-callback micromodal-slide" id="modal-callback" aria-hidden="true">
-    <div class="modal__overlay" data-micromodal-close>
-      <div class="modal__container" role="dialog">
-        <header class="modal__header">
-          <svg class="modal__close" data-micromodal-close viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path data-micromodal-close d="M2 2L34 33M34 2L2 33" stroke="white" stroke-width="4" />
-          </svg>
-        </header>
-
-        <main class="modal__content">
-          <form action="" data-target="callback" data-subject="" class="modal__form form">
-            <h3 class="modal__title">
-              Название услуги
-            </h3>
-
-            <div class="form__info">
-              Заполните информацию и я Вам перезвоню
-            </div>
-            <!-- /.form__info -->
-
-            <div class="input mb-3">
-              <input placeholder="Ваше имя" autocomplete="off" type="text" name="user_name" class="input__field">
-              <img data-tippy-content="Имя содержит ошибки" class="input__warning" src="img/icons/misc/warning.svg" alt="">
-            </div>
-            <!-- /.input -->
-
-            <div class="input mb-3">
-              <input placeholder="Номер телефона" autocomplete="off" type="tel" name="user_phone" class="input__field">
-              <img data-tippy-content="Телефон содержит ошибки" class="input__warning" src="img/icons/misc/warning.svg" alt="">
-            </div>
-            <!-- /.input -->
-
-            <div class="input mb-5">
-              <input placeholder="Ваша электронная почта" autocomplete="off" type="email" name="user_email" class="input__field">
-              <img data-tippy-content="Почта содержит ошибки" class="input__warning" src="img/icons/misc/warning.svg" alt="">
-            </div>
-            <!-- /.input -->
-
-            <button data-sending="Отправка..." type="submit" class="button button--block button-primary" data-index="2">ЗАКАЗАТЬ УСЛУГУ</button>
-
-            <div class="form__policy text-center mb-0">
-              Нажимая на кнопку, Вы соглашаетесь с политикой
-              <br>
-              конфиденциальности
-            </div>
-            <!-- /.form__policy -->
-          </form>
-        </main>
-      </div>
-    </div>
-  </div>
-  <!-- /.modal -->
 
   <div class="modal modal-success micromodal-slide" id="modal-success" aria-hidden="true">
     <div class="modal__overlay" data-micromodal-close>

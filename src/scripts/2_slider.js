@@ -28,7 +28,7 @@ const SLIDER_SERVICE = new Swiper('.slider-service', {
 
   breakpoints: {
     540: {
-      slidesPerView: 2,
+      slidesPerView: 1.5,
     },
 
     991: {
@@ -86,7 +86,7 @@ const SLIDER_BLOG = new Swiper('.slider-blog', {
 
   breakpoints: {
     540: {
-      slidesPerView: 2,
+      slidesPerView: 1.5,
     },
 
     991: {
@@ -137,3 +137,13 @@ const SLIDER_BLOG_CONTENT = new Swiper('.slider-blog-content', {
     crossFade: true
   },
 });
+
+if (isMobile) {
+  const SLIDER_GALLERY = new Swiper('.slider-gallery', {
+    slidesPerView: 1.06,
+
+    a11y: {
+      enabled: false,
+    },
+  });
+}

@@ -18,19 +18,4 @@ if (service) {
       collapse.classList.remove('content-collapse--hidden');
     });
   });
-
-  const content = service.querySelector('.service__content');
-  if (content) {
-    const items = content.querySelectorAll('.service-item');
-
-    items.forEach(item => {
-      const title = item.querySelector('.service-item__title').innerHTML;
-      const button = item.querySelector('[data-micromodal-trigger]');
-
-      button.addEventListener('click', () => {
-        const modal = document.getElementById(button.dataset.micromodalTrigger)
-        modal.querySelector('.modal__title').innerHTML = title;
-      });
-    });
-  }
 }

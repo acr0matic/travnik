@@ -1,3 +1,7 @@
+a[class*="button"] {
+  display: inline-block;
+}
+
 .button {
   @include breakpoint($breakpoint-tablet--large) {
     padding: 14px 50px;

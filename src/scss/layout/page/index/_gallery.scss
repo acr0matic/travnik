@@ -3,7 +3,7 @@
 
 .gallery {
   @include breakpoint($breakpoint-mobile--large) {
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
   }
 
   display: grid;
@@ -44,6 +44,10 @@
   }
 
   &__item {
+    @include breakpoint($breakpoint-mobile--large) {
+      height: 320px;
+    }
+
     width: 100%;
     height: 100%;
     transition: $transition ease;

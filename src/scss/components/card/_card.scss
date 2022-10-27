@@ -25,7 +25,21 @@
   }
 
   &__picture {
+    @include breakpoint($breakpoint-laptop) {
+      height: 320px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      height: 240px;
+    }
+
+    @include breakpoint($breakpoint-mobile--large) {
+      height: 320px;
+    }
+
     overflow: hidden;
+    height: 410px;
+
     margin-bottom: 24px;
 
     transition: $transition ease;
@@ -36,7 +50,18 @@
   }
 
   &__title {
-    margin-bottom: 30px;
+    @include breakpoint($breakpoint-laptop) {
+      height: 40px;
+      font-size: 18px;
+    }
+
+    height: 52px;
+    margin-bottom: 24px;
+
+    font-size: 24px;
+
+    line-height: 1.1;
+
     text-transform: uppercase;
   }
 
