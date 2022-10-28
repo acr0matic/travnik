@@ -36,21 +36,22 @@
 
   transition: $transition ease;
 
-  &--hide {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+  &--open {
+    z-index: 15;
+
+    .widget__link {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: initial;
+    }
   }
 
   &__link {
-    &--hide {
-      pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 
-      .widget__icon {
-        opacity: 0;
-        visibility: hidden;
-      }
-    }
+    transition: $transition ease;
   }
 
   &__icon {
@@ -68,6 +69,12 @@
     cursor: pointer;
     transition: all 0.15s ease;
 
+    @media (hover: hover) {
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
     &--big {
       @include breakpoint($breakpoint-tablet) {
         width: 64px;
@@ -79,14 +86,6 @@
       animation-duration: 2s;
       animation-delay: 3s;
       animation-iteration-count: infinite;
-    }
-
-    &:hover {
-      @include breakpoint($breakpoint-tablet) {
-        opacity: 1;
-      }
-
-      opacity: 0.7;
     }
   }
 }

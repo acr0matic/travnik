@@ -5,23 +5,19 @@ if (widget) {
   const container = widget.closest('.widget');
 
   widget.addEventListener('click', () => {
-    widgetIcons.forEach(icon => {
-      icon.classList.toggle('widget__link--hide');
-    });
+    widget.parentNode.classList.toggle('widget--open');
   });
 
-  ['click', 'touchstart'].forEach(evt =>
+  ['click', 'scroll'].forEach(evt =>
     window.addEventListener(evt, (e) => {
       if (!widget.contains(e.target))
-        widgetIcons.forEach(icon => icon.classList.add('widget__link--hide'));
+        widget.parentNode.classList.remove('widget--open');
     })
   );
 
   const pageHeight = document.body.scrollHeight;
   window.addEventListener('scroll', () => {
-    if (window.scrollY > pageHeight - 600)
-      container.classList.add('widget--hide');
-    else
-      container.classList.remove('widget--hide');
+    if (window.scrollY > pageHeight - 600) container.classList.add('widget--hide');
+    else container.classList.remove('widget--hide');
   });
 }

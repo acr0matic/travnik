@@ -5,6 +5,10 @@
 }
 
 .advantage {
+  @include breakpoint($breakpoint-tablet) {
+    padding-top: 20px;
+  }
+
   &__item {
     @include breakpoint($breakpoint-laptop--large) {
       font-size: 27px;

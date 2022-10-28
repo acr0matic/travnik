@@ -1,0 +1,20 @@
+.scroll-top {
+  @include breakpoint($breakpoint-tablet) {
+    right: 36px;
+  }
+
+  position: fixed;
+  z-index: 10;
+  right: 40px;
+  bottom: 125px;
+
+  @media (hover: hover) {
+    &:hover .background {
+      fill: $palette-white;
+    }
+  }
+
+  path {
+    transition: $transition ease;
+  }
+}

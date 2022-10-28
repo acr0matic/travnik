@@ -190,6 +190,10 @@
               <a href="" class="social__link link">
                 <img src="img/icons/social/whatsapp.svg" alt="" class="social__icon">
               </a>
+
+              <a href="" class="social__link link">
+                <img src="img/icons/social/telegram.svg" alt="" class="social__icon">
+              </a>
             </div>
             <!-- /.social -->
           </div>
@@ -402,7 +406,7 @@
               <!-- /.col-5 -->
 
               <div class="col-12 col-lg-8 col-xxl-7 ps-lg-5">
-                <div class="section__header">
+                <div class="section__header d-none d-sm-block">
                   <h2 class="section__title">
                     Кому доверить свое здоровье ?
                   </h2>
@@ -413,6 +417,13 @@
                   <picture class="float-start d-block d-lg-none">
                     <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/herbalism/1.jpg" src="img/layout/herbalism/thumb/1.jpg" alt="">
                   </picture>
+
+                  <div class="section__header d-block d-sm-none">
+                    <h2 class="section__title">
+                      Кому доверить свое здоровье ?
+                    </h2>
+                  </div>
+                  <!-- /.section__header -->
 
                   <p>
                     Каждый испытывал в своей жизни состояние недомогания по той или иной причине. Чтобы справиться с этим состоянием обычно человек идет в поликлинику, аптеку или занимается самолечением.
@@ -615,10 +626,15 @@
                 <!-- /.col-5 -->
 
                 <div class="col-12 col-md-7 d-flex flex-column">
+                  <div class="section__header">
+                    <h2 class="section__title">
+                      Трав тысячи, а сборов и средств на их основе - миллионы.
+                    </h2>
+                  </div>
+                  <!-- /.section__header -->
+
                   <div class="healing__content mb-4">
                     <p>
-                      Трав тысячи, а сборов и средств на их основе - миллионы.
-                      <br> <br>
                       Описания и разъяснения к тому: когда, как и что именно в действительности надо принимать – нет.
                       <br>
                       Проблема отсутствия знаний и полноценной консультации со специалистом не дает принять верное решение по лечению.
@@ -738,12 +754,6 @@
           <!-- /.row -->
         </div>
         <!-- /.about -->
-        <div class="section__header">
-          <h2 class="section__title">
-
-          </h2>
-        </div>
-        <!-- /.section__header -->
       </div>
       <!-- /.container -->
     </section>
@@ -2069,7 +2079,7 @@
       <div class="footer">
         <div class="footer__logo">
           <a href="">
-            <img src="img/logo.svg" class="logo logo--header" alt="">
+            <img src="img/logo__footer.svg" class="logo logo--header" alt="">
           </a>
         </div>
         <!-- /.footer__logo -->
@@ -2139,21 +2149,30 @@
   <!-- /.modal -->
 
   <div class="widget">
-    <a class="widget__link widget__link--hide" href="https://api.whatsapp.com/send?phone=74954102300%E2%80%99" target="_blank">
+    <a class="widget__link" href="https://api.whatsapp.com/send?phone=74954102300%E2%80%99" target="_blank">
       <img src="img/misc/widget/whatsapp.svg" alt="" class="widget__icon">
     </a>
 
-    <a class="widget__link widget__link--hide" href="https://t.me/" target="_blank">
+    <a class="widget__link" href="https://t.me/" target="_blank">
       <img src="img/misc/widget/telegram.svg" alt="" class="widget__icon">
     </a>
 
-    <a class="widget__link widget__link--hide" href="https://t.me/" target="_blank">
+    <a class="widget__link" href="https://t.me/" target="_blank">
       <img src="img/misc/widget/phone.svg" alt="" class="widget__icon">
     </a>
 
     <img id="widget" src="img/misc/widget/widget.svg" alt="" class="widget__icon widget__icon--big">
   </div>
   <!-- /.widget -->
+
+  <div class="scroll-top">
+    <a href="#">
+      <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.9986 36.2363L21.4556 5.99986L38.9127 36.2363H3.9986Z" fill="#F1F1F1" />
+        <path class="background" d="M21.457 10.626L8.00648 33.4272H34.9075L21.457 10.626Z" fill="#1B1B1B" />
+      </svg>
+    </a>
+  </div>
 
   <!-- Скрипты -->
   <!-- build:js js/script.min.js -->
