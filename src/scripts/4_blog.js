@@ -2,6 +2,11 @@ const blog = document.getElementById('blog');
 
 if (blog) {
   const collapse = blog.querySelector('.content-collapse');
+  const close = collapse.querySelector('.content-collapse__close');
+
+  close.addEventListener('click', () => {
+    collapse.classList.add('content-collapse--hidden');
+  });
 
   const cards = blog.querySelectorAll('.card');
   cards.forEach(card => {

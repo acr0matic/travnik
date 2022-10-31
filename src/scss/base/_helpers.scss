@@ -17,4 +17,30 @@
     margin-top: 0 !important;
     opacity: 0;
   }
+
+  &__close {
+    @include breakpoint($breakpoint-tablet--large) {
+      top: 10px;
+      right: -25px;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      top: 360px;
+      right: 0;
+    }
+
+    position: absolute;
+    z-index: 5;
+    top: 5px;
+    right: 0;
+
+    cursor: pointer;
+    transition: $transition ease;
+
+    @media (hover: hover) {
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
 }
