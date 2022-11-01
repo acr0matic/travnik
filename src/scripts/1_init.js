@@ -11,6 +11,7 @@ const tooltip = tippy('[data-tippy-content]', {
   maxWidth: 320,
   placement: 'right',
   theme: 'flat',
+  offset: [0, 15],
 });
 
 const forms = document.querySelectorAll('form');
