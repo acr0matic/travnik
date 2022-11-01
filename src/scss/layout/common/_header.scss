@@ -16,6 +16,14 @@
 
   background-color: $palette-black;
   transition: 0.3s ease;
+
+  .container {
+    @include breakpoint($breakpoint-tablet) {
+      position: static;
+    }
+
+    position: relative;
+  }
 }
 
 .header {
@@ -39,9 +47,13 @@
   }
 
   &__callback {
+    margin-right: 80px;
+    margin-left: auto;
   }
 
   &__action {
-    margin-left: auto;
+    @include breakpoint($breakpoint-tablet--large) {
+      margin-left: auto;
+    }
   }
 }

@@ -12,30 +12,6 @@
   &__link {
   }
 
-  &--hero {
-    .nav__item {
-      display: flex;
-
-      transform-origin: left center;
-      transition: transform $transition ease;
-
-      @media (hover: hover) {
-        &:hover {
-          transform: scale(1.1);
-        }
-      }
-
-      &:not(:last-child) {
-        margin-bottom: 20px;
-      }
-    }
-
-    .nav__link {
-      width: 100%;
-      font-size: 20px;
-    }
-  }
-
   &--mobile {
     .nav__item {
       &:not(:last-child) {
@@ -44,6 +20,10 @@
     }
 
     .nav__link {
+      @include breakpoint($breakpoint-tablet--large) {
+        font-size: $font-size__text--regular + 2px;
+      }
+
       font-size: $font-size__text--big;
     }
   }
