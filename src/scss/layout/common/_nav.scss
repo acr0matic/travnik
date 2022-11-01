@@ -24,7 +24,16 @@
         font-size: $font-size__text--regular + 2px;
       }
 
+      padding: 10px 0;
       font-size: $font-size__text--big;
+
+      transition: $transition ease;
+
+      @media (hover: hover) {
+        &:hover {
+          opacity: 0.6;
+        }
+      }
     }
   }
 }

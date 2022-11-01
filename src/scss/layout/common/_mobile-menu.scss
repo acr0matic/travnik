@@ -16,6 +16,8 @@
       width: 100%;
       height: calc(100vh - var(--header-height));
 
+      padding-top: 16px;
+
       background-color: $palette-black;
       box-shadow: none;
     }
@@ -24,7 +26,7 @@
     width: 300px;
 
     margin-left: auto;
-    padding-top: 16px;
+    padding-top: 25px;
 
     background: rgba(#232120, 0.85);
     box-shadow: -18px 7px 24px rgba(#000000, 0.25);
@@ -48,7 +50,11 @@
   }
 
   &__nav {
-    margin-bottom: 45px;
+    @include breakpoint($breakpoint-tablet) {
+      margin-bottom: 50px;
+    }
+
+    margin-bottom: 25px;
   }
 
   &__callback {
