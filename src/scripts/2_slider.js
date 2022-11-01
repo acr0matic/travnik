@@ -25,10 +25,15 @@ const SLIDER_HERO = new Swiper('.slider-hero', {
 const SLIDER_SERVICE = new Swiper('.slider-service', {
   speed: 300,
   slidesPerView: 1,
+  spaceBetween: 32,
 
   breakpoints: {
     540: {
-      slidesPerView: 1.5,
+      slidesPerView: 1.6,
+    },
+
+    768: {
+      slidesPerView: 2,
     },
 
     991: {
@@ -43,6 +48,12 @@ const SLIDER_SERVICE = new Swiper('.slider-service', {
   pagination: {
     el: '.slider-service .swiper-pagination',
     clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.service .slider .swiper-button-next',
+    prevEl: '.service .slider .swiper-button-prev',
   },
 
   a11y: {
@@ -83,10 +94,15 @@ const SLIDER_SERVICE_CONTENT = new Swiper('.slider-service-content', {
 const SLIDER_BLOG = new Swiper('.slider-blog', {
   speed: 300,
   slidesPerView: 1,
+  spaceBetween: 32,
 
   breakpoints: {
     540: {
-      slidesPerView: 1.5,
+      slidesPerView: 1.6,
+    },
+
+    768: {
+      slidesPerView: 2,
     },
 
     991: {
@@ -101,6 +117,12 @@ const SLIDER_BLOG = new Swiper('.slider-blog', {
   pagination: {
     el: '.slider-blog .swiper-pagination',
     clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.blog .slider .swiper-button-next',
+    prevEl: '.blog .slider .swiper-button-prev',
   },
 
   a11y: {

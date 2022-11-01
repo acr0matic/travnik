@@ -25,12 +25,16 @@
   }
 
   &__picture {
+    @include breakpoint($breakpoint-laptop--large) {
+      height: 360px;
+    }
+
     @include breakpoint($breakpoint-laptop) {
-      height: 320px;
+      height: 310px;
     }
 
     @include breakpoint($breakpoint-tablet) {
-      height: 240px;
+      height: 270px;
     }
 
     @include breakpoint($breakpoint-mobile--large) {
@@ -38,7 +42,7 @@
     }
 
     overflow: hidden;
-    height: 410px;
+    height: 380px;
 
     margin-bottom: 24px;
 

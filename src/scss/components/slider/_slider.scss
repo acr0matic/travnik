@@ -1,9 +1,29 @@
 /* purgecss start ignore */
 
+.slider {
+  position: relative;
+
+  .swiper {
+    @include breakpoint($breakpoint-tablet--large) {
+      width: 90%;
+    }
+
+    @include breakpoint($breakpoint-tablet) {
+      width: 100%;
+    }
+
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
 .swiper {
-  overflow: visible;
+  @include breakpoint($breakpoint-tablet) {
+    overflow: visible;
+  }
 
   &-wrapper {
+    box-sizing: border-box;
     width: initial;
   }
 
@@ -50,10 +70,35 @@
     }
   }
 
-  &--grid {
-    .row {
-      flex-wrap: nowrap;
+  &-button-prev,
+  &-button-next {
+    @include breakpoint($breakpoint-tablet) {
+      display: none;
     }
+
+    top: 30%;
+
+    width: 30px;
+    height: 70px;
+
+    margin-top: 0;
+    background-size: 100% 100%;
+
+    transition: $transition ease;
+
+    &::after {
+      content: "";
+    }
+  }
+
+  &-button-prev {
+    left: -25px;
+    background-image: url("../img/icons/control/slider__prev.svg");
+  }
+
+  &-button-next {
+    right: -25px;
+    background-image: url("../img/icons/control/slider__next.svg");
   }
 }
 
