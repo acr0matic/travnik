@@ -17,5 +17,5 @@ const tooltip = tippy('[data-tippy-content]', {
 const forms = document.querySelectorAll('form');
 forms.forEach(form => new Form(form));
 
-const accordion = document.querySelectorAll('.handorgel')
+let accordion = document.querySelectorAll('.handorgel')
 accordion.forEach(item => new handorgel(item));

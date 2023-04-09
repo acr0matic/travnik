@@ -55,18 +55,23 @@
 
   &__title {
     @include breakpoint($breakpoint-laptop) {
-      height: 40px;
       font-size: 18px;
     }
 
-    height: 52px;
+    display: -webkit-box;
+    overflow: hidden;
+
+    min-height: 60px;
     margin-bottom: 24px;
 
     font-size: 24px;
+    line-height: 1.25;
 
-    line-height: 1.1;
-
+    text-align: center;
     text-transform: uppercase;
+
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
   }
 
   &__description {

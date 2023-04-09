@@ -5,6 +5,7 @@
 .gallery {
   @include breakpoint($breakpoint-mobile--large) {
     display: flex;
+    grid-gap: 0;
   }
 
   display: grid;
@@ -46,7 +47,7 @@
 
   &__item {
     @include breakpoint($breakpoint-mobile--large) {
-      height: 320px;
+      aspect-ratio: 1 / 1;
     }
 
     width: 100%;

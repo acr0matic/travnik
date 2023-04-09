@@ -33,7 +33,7 @@
     width: 400px;
   }
 
-  &__content {
+  .container {
     @include breakpoint($breakpoint-tablet) {
       top: 25%;
     }
@@ -56,6 +56,24 @@
 
     position: relative;
     z-index: 2;
+  }
+
+  &__action {
+    @include breakpoint($breakpoint-tablet) {
+      flex-direction: column;
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .button {
+      @include breakpoint($breakpoint-mobile--large) {
+        width: 240px;
+      }
+
+      width: 320px;
+    }
   }
 
   &__fill {

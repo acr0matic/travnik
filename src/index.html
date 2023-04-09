@@ -1062,7 +1062,9 @@
             <!-- /.swiper slider-blog-content -->
 
             <div class="content-collapse__close">
-              <img src="img/icons/control/close.svg" alt="">
+              <a href="#blog">
+                <img src="img/icons/control/close.svg" alt="">
+              </a>
             </div>
           </div>
           <!-- /.container -->
@@ -1162,7 +1164,7 @@
                         <img class="image image--cover lazy__item lazy__item--blur" data-src="img/layout/service/1.jpg" src="img/layout/service/thumb/1.jpg" alt="">
                       </picture>
 
-                      <h3 class="card__title">Экспресс консультация</h3>
+                      <h3 class="card__title">Экспресс консультация Экспресс консультация Экспресс консультация Экспресс консультация</h3>
 
                       <div class="card__action">
                         <button class="button button--block button-primary">ЗАКАЗАТЬ УСЛУГУ</>
@@ -1553,7 +1555,9 @@
             <!-- /.swiper slider-service-content -->
 
             <div class="content-collapse__close">
-              <img src="img/icons/control/close.svg" alt="">
+              <a href="#service">
+                <img src="img/icons/control/close.svg" alt="">
+              </a>
             </div>
           </div>
           <!-- /.container -->
@@ -2019,6 +2023,11 @@
             <!-- /.col-4 -->
           </div>
           <!-- /.row -->
+
+          <div class="feedback__action">
+            <button class="button button-secondary" data-handler="ajax" data-max-pages="" data-paged="" data-target="feedback">Загрузить еще</button>
+          </div>
+          <!-- /.faq__action -->
         </div>
         <!-- /.feedback -->
       </div>
@@ -2040,15 +2049,11 @@
               </div>
               <!-- /.section__header -->
 
-              <form action="" data-target="callback" data-subject="" class="form d-flex flex-column flex-md-row justify-content-center px-3">
-                <div class="input mb-3 mb-md-0 me-md-4">
-                  <input placeholder="Номер телефона" autocomplete="off" type="tel" name="user_name" class="input__field">
-                  <img data-tippy-content="Имя содержит ошибки" class="input__warning" src="img/icons/misc/warning.svg" alt="">
-                </div>
-                <!-- /.input -->
-
-                <button data-sending="Отправка..." type="submit" class="button button-secondary" data-index="2">Получить консультацию</button>
-              </form>
+              <div class="contact__action">
+                <a target="_blank" href="" class="button button-primary mb-3 mb-md-0 me-md-5">Написать В Telegram</a>
+                <a target="_blank" href="" class="button button-primary">Написать В WhatsApp</a>
+              </div>
+              <!-- /.contact__action -->
             </div>
             <!-- /.contact__wrapper -->
 

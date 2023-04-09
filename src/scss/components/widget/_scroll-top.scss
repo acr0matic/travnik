@@ -8,10 +8,17 @@
   right: 40px;
   bottom: 125px;
 
+  transition: $transition ease;
+
   @media (hover: hover) {
     &:hover .background {
       fill: $palette-white;
     }
+  }
+
+  &--hidden {
+    opacity: 0;
+    visibility: hidden;
   }
 
   path {

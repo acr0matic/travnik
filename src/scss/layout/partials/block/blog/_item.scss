@@ -14,12 +14,17 @@
     flex-direction: column;
 
     margin-top: 20px;
+
+    p {
+      text-indent: 30px;
+    }
   }
 
   &__title {
     margin-bottom: 40px;
     font-size: 26px;
 
+    text-align: center;
     text-transform: uppercase;
   }
 }

@@ -60,6 +60,11 @@ const SLIDER_SERVICE = new Swiper('.slider-service', {
     enabled: false,
   },
 
+  autoplay: {
+    disableOnInteraction: false,
+    delay: 10000,
+  },
+
   on: {
     afterInit: (instance) => {
       const container = instance.el
@@ -119,6 +124,11 @@ const SLIDER_BLOG = new Swiper('.slider-blog', {
     clickable: true,
   },
 
+  autoplay: {
+    disableOnInteraction: false,
+    delay: 10000,
+  },
+
   // Navigation arrows
   navigation: {
     nextEl: '.blog .slider .swiper-button-next',
@@ -163,6 +173,7 @@ const SLIDER_BLOG_CONTENT = new Swiper('.slider-blog-content', {
 if (isMobile) {
   const SLIDER_GALLERY = new Swiper('.slider-gallery', {
     slidesPerView: 1.06,
+    spaceBetween: 16,
 
     a11y: {
       enabled: false,

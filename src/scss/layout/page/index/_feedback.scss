@@ -2,6 +2,14 @@
 }
 
 .feedback {
+  &__action {
+    margin-top: 40px;
+
+    .button {
+      margin: 0 auto;
+    }
+  }
+
   &__item {
     @include breakpoint($breakpoint-laptop--large) {
       padding: 20px 15px;

@@ -45,7 +45,7 @@ ajaxButton.forEach(button => {
         let result = await response.text();
         container.insertAdjacentHTML('beforeend', result);
 
-        if (target === 'service') {
+        if (target === 'faq') {
           accordion = document.querySelectorAll('.handorgel');
           accordion.forEach(instance => new handorgel(instance, { ariaEnabled: false, }));
         }

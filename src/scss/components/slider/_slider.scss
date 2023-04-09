@@ -72,11 +72,19 @@
 
   &-button-prev,
   &-button-next {
+    @include breakpoint($breakpoint-laptop--large) {
+      top: 160px;
+    }
+
+    @include breakpoint($breakpoint-laptop) {
+      top: 130px;
+    }
+
     @include breakpoint($breakpoint-tablet) {
       display: none;
     }
 
-    top: 30%;
+    top: 170px;
 
     width: 30px;
     height: 70px;
