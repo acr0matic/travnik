@@ -27,4 +27,15 @@
     text-align: center;
     text-transform: uppercase;
   }
+
+  &__picture {
+    @include breakpoint($breakpoint-tablet) {
+      max-width: 360px;
+      height: 350px;
+
+      margin-right: auto;
+      margin-bottom: 64px;
+      margin-left: auto;
+    }
+  }
 }

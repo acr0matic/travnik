@@ -34,10 +34,12 @@
   flex-direction: column;
   align-items: center;
 
+  pointer-events: none;
   transition: $transition ease;
 
   &--open {
     z-index: 15;
+    pointer-events: initial;
 
     .widget__link {
       opacity: 1;

@@ -2,11 +2,14 @@
   &__form {
     @include breakpoint($breakpoint-tablet--large) {
       margin-top: 100px;
+      padding-top: 0;
     }
 
     @include breakpoint($breakpoint-tablet) {
       margin-top: 50px;
     }
+
+    padding-top: 96px;
   }
 
   &__picture {
@@ -23,7 +26,10 @@
 
     @include breakpoint($breakpoint-tablet) {
       max-width: 360px;
+
+      margin-right: auto;
       margin-bottom: 40px;
+      margin-left: auto;
     }
 
     @include breakpoint($breakpoint-tablet) {
